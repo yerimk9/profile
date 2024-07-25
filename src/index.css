@@ -99,7 +99,7 @@ textarea:not([rows]) {
 }
 
 .intro-content {
-  animation: fadeIn 2s ease-in-out;
+  animation: all 2s ease-in-out;
 }
 
 .intro-title {
