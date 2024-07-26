@@ -89,7 +89,7 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-/* .intro-container {
+.logo-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,48 +98,29 @@ textarea:not([rows]) {
   text-align: center;
 }
 
-.intro-content {
-  animation: all 2s ease-in-out;
-}
-
-.intro-title {
-  font-size: 2rem;
-  letter-spacing: 2rem;
-  color: #333;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
- */
-.intro-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #f0f0f0;
-  text-align: center;
-}
-
-.intro-content {
+.logo-content {
   animation: fadeIn 2s ease-in-out;
 }
 
-.intro-title {
+.logo-title {
   font-size: 2rem;
-  letter-spacing: 2rem; /* 초기 문자 간격 설정 */
+  letter-spacing: 4rem;
   color: #333;
-  white-space: nowrap; /* 줄 바꿈 방지 */
-  overflow: hidden; /* 문자가 붙으면서 넘치지 않도록 처리 */
-  display: inline-block; /* 인라인 블록으로 설정하여 문자 간격 조정 가능 */
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
 }
 
-.intro-title .char {
+.logo-subTitle {
+  font-size: 1.5rem;
+  letter-spacing: 2rem;
+  color: #333;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translate(5px, -100%);
+}
+
+.logo-title .char {
   display: inline-block;
   transform: translateY(100%);
   opacity: 0;
