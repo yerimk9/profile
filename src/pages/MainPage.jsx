@@ -1,7 +1,29 @@
-import React from "react";
-// import titleLogo from "../assets/titleLogo.svg";
+import React, { useState, useEffect } from "react";
 
 function MainPage() {
+  const [currentImage, setCurrentImage] = useState(
+    "https://i.pinimg.com/originals/b5/9d/8f/b59d8f8cbb54368862109db8324dc6b8.jpg"
+  ); // 맨 처음에 보여줄 사진
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+
+      const sections = document.querySelectorAll(".content");
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionBottom = sectionTop + section.clientHeight;
+        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+          const newImage = section.querySelector("img").src;
+          setCurrentImage(newImage);
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="main-container">
       <div className="bg">
@@ -21,10 +43,7 @@ function MainPage() {
         <div className="f-sec">
           <div className="fix-img def img-1 f-ani">
             <div className="img-box">
-              <img
-                src="https://i.pinimg.com/originals/b5/9d/8f/b59d8f8cbb54368862109db8324dc6b8.jpg"
-                alt="img1"
-              />
+              <img src={currentImage} alt="Profile" />
             </div>
           </div>
           <div className="center-txt">
@@ -177,7 +196,6 @@ function MainPage() {
             </div>
           </div>
         </section>
-
         <section className="other-content">
           <div className="other-box">
             <p className="tit inline">
