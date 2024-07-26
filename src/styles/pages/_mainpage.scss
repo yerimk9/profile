@@ -28,8 +28,6 @@
 }
 
 .other-content {
-  padding-bottom: 150px;
-
   .other-box {
     position: relative;
     border: 1px solid #d5d5d5;
@@ -80,7 +78,7 @@
       width: 85%;
 
       ul {
-        border-top: 1px solid #d5d5d5;
+        // border-top: 1px solid #d5d5d5;
         border-bottom: 1px solid #d5d5d5;
 
         li {
