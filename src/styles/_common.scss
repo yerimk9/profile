@@ -159,6 +159,17 @@
         letter-spacing: 0;
         display: block;
         color: #474747;
+
+        &::before {
+          position: absolute;
+          content: "";
+          background: #d5d5d5;
+          width: 1px;
+          height: 100px;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 40px;
+        }
       }
 
       .page-heading {
@@ -583,16 +594,15 @@
   .box-top {
     pointer-events: none;
     z-index: 20;
+
+    top: 25px;
   }
 
   .box-bottom {
-    top: 0;
-    left: 0;
-    bottom: inherit;
+    background: #fff;
+    transition: 0.6s all;
+    -webkit-transition: 0.6s all;
     height: 100%;
-    transition: 0.4s all;
-    -webkit-transition: 0.4s all;
-    pointer-events: none;
 
     .nav_other {
       display: block;
@@ -604,13 +614,15 @@
     }
 
     nav {
-      opacity: 0;
-      pointer-events: none;
-      transform: inherit;
+      opacity: 1;
+      pointer-events: all;
+      transition: 0.6s all;
+      -webkit-transition: 0.6s all;
     }
   }
 
   .nav_trigger {
+    cursor: pointer;
     display: block;
     position: absolute;
     width: 35px;
@@ -670,7 +682,7 @@
   .nav {
     margin-left: inherit;
     width: 100%;
-    transform: translateY(-100%);
+    transform: translateY(0%);
   }
 
   .nav_lists {
@@ -681,4 +693,8 @@
   .nav_list {
     text-align: center;
   }
+}
+
+.hidden {
+  display: none;
 }

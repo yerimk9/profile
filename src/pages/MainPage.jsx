@@ -4,6 +4,8 @@ function MainPage() {
   const [currentImage, setCurrentImage] = useState(
     "https://i.pinimg.com/originals/b5/9d/8f/b59d8f8cbb54368862109db8324dc6b8.jpg"
   ); // 맨 처음에 보여줄 사진
+  const [isNavVisible, setIsNavVisible] = useState(true);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
@@ -13,6 +15,7 @@ function MainPage() {
       setCurrentImage(
         "https://i.pinimg.com/originals/b5/9d/8f/b59d8f8cbb54368862109db8324dc6b8.jpg"
       );
+      setIsNavVisible(false);
       return;
     }
 
@@ -28,16 +31,32 @@ function MainPage() {
     });
   };
 
+  const toggleNav = () => {
+    setIsNavVisible(!isNavVisible);
+  };
+
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth); // 화면 너비 상태 업데이트
+
+    // 화면 너비가 768픽셀 이하일 경우 네비게이션을 숨기기
+    if (window.innerWidth <= 768) {
+      setIsNavVisible(false);
+    } else {
+      // 화면 너비가 768픽셀 이상일 경우 네비게이션을 표시하기
+      setIsNavVisible(true);
+    }
+  };
+
   useEffect(() => {
     // 처음 렌더링될 때와 화면 크기 변경 시 스크롤 이벤트 핸들러 설정
     handleScroll(); // 초기 이미지 설정
     window.addEventListener("scroll", handleScroll);
-    window.addEventListener("resize", handleScroll); // 화면 크기 변경 시 이미지 업데이트
+    window.addEventListener("resize", handleResize); // 화면 크기 변경 시 상태 업데이트
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [windowWidth]);
 
   return (
     <div className="main-container">
@@ -353,7 +372,7 @@ function MainPage() {
                   >
                     <path
                       id="curve"
-                      d="M10,55 C150,20 390,10 690,65"
+                      d="M10,70 C150,20 390,10 690,65"
                       fill="transparent"
                     />
                     <text>
@@ -374,7 +393,7 @@ function MainPage() {
           <div className="box-middle">
             <div className="img-box"></div>
           </div>
-          <div className="box-bottom">
+          <div className={`box-bottom ${isNavVisible ? "" : "hidden"}`}>
             <nav className="nav">
               <ul className="nav_lists">
                 <li className="nav_list">
@@ -405,19 +424,8 @@ function MainPage() {
                 </li>
               </ul>
             </nav>
-            <div className="nav_other">
-              <p className="text-link contact-btn">
-                <a className="fuwafuwa1" href="https://cocochi.design/contact">
-                  <img
-                    src="https://cocochi.design/wp-content/themes/cocochi/images/btn_contact.svg"
-                    alt=""
-                  />
-                </a>
-              </p>
-              <p className="credit">copyright onf Inc.</p>
-            </div>
           </div>
-          <div className="nav_trigger">
+          <div className="nav_trigger" onClick={toggleNav}>
             <span></span>
           </div>
         </div>
