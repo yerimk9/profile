@@ -87,3 +87,8 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
+
+img {
+  height: auto;
+  width: 100%;
+}

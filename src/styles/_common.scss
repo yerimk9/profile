@@ -1,0 +1,643 @@
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+
+  .bg-wrap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+
+    .bg-box-inner {
+      position: relative;
+      height: 100%;
+      width: 100%;
+
+      .frame {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        height: 90%;
+        pointer-events: none;
+
+        span {
+          position: absolute;
+          display: block;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 14px;
+
+          &::before {
+            position: absolute;
+            display: block;
+            content: "";
+            top: 0;
+            right: 0;
+            height: 30px;
+            width: 30px;
+            border-top: 1px solid #949494;
+            border-right: 1px solid #949494;
+          }
+
+          &::after {
+            position: absolute;
+            display: block;
+            content: "";
+            top: 0;
+            left: 0;
+            height: 30px;
+            width: 30px;
+            border-top: 1px solid #949494;
+            border-left: 1px solid #949494;
+          }
+
+          &:nth-of-type(2) {
+            top: auto;
+            bottom: 0;
+            left: 0;
+            transform: scale(1, -1);
+          }
+        }
+      }
+    }
+    .bg-box {
+      width: 50%;
+      height: 100%;
+      position: relative;
+
+      &.bg-right {
+        background: url("https://cocochi.design/wp-content/themes/cocochi/images/bg.jpg");
+        background-size: cover;
+      }
+    }
+  }
+}
+
+.fix-content {
+  width: 100%;
+  position: relative;
+
+  &.fix-right {
+    width: 50%;
+    margin-left: auto;
+    margin-right: 0;
+    position: relative;
+    margin-bottom: 380px;
+
+    section {
+      margin: 0 auto 150px;
+      width: min(80%, 660px);
+
+      &.content {
+        padding-top: 150px;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: "";
+          height: 100%;
+          width: 88%;
+          border-bottom: 1px solid #d5d5d5;
+          left: 50%;
+          transform: translateX(-50%);
+          pointer-events: none;
+        }
+      }
+    }
+
+    .f-sec {
+      height: 100vh;
+      width: 100%;
+      position: relative;
+      margin-bottom: 150px;
+
+      .img-box {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+
+        .img-box img {
+          object-fit: contain;
+          height: 100%;
+          width: 100%;
+        }
+
+        .f-ani {
+          top: 50%;
+          transition: 0.6s all;
+          transition-delay: 1s;
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  &.fix-left {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    pointer-events: none;
+    width: 50%;
+  }
+}
+.fix-img {
+  position: fixed;
+  width: 50%;
+  height: calc(100% - 250px);
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  opacity: 0;
+  z-index: 3;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  pointer-events: none;
+  transition: 0.6s all;
+
+  .img-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &.def {
+    opacity: 1;
+  }
+}
+
+.content {
+  transition: 0.6s all;
+}
+
+.inner-content {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #474747;
+  letter-spacing: 0.2em;
+
+  .txt-wrap {
+    width: 96%;
+    margin: 0 auto;
+
+    .sub-heading {
+      font-size: 12px;
+      line-height: 1.4em;
+      margin-bottom: 30px;
+      font-weight: 500;
+
+      .num {
+        position: relative;
+        margin-right: 10px;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        letter-spacing: 0.1em;
+      }
+    }
+
+    .sec-heading {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      line-height: 1.6em;
+    }
+
+    .inner-content .sec-txt {
+      font-size: 14px;
+      margin-bottom: 20px;
+      line-height: 2em;
+      letter-spacing: 0.1em;
+    }
+  }
+}
+
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+
+  .box02 {
+    width: 49%;
+
+    &:nth-of-type(odd) {
+      margin-right: 2%;
+    }
+  }
+}
+
+.txt {
+  font-size: 20px;
+  line-height: 1.6em;
+  letter-spacing: 0.2em;
+}
+
+.sp_only {
+  display: none;
+}
+
+.box-top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: all;
+}
+
+.header_title {
+  font-size: 20px;
+  pointer-events: all;
+  width: 150px;
+}
+
+.box-middle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: all;
+}
+
+.box-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: all;
+
+  .nav {
+    margin-left: inherit;
+  }
+
+  .nav_other {
+    display: none;
+  }
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav_lists {
+  display: flex;
+}
+
+.nav_list {
+  padding: 20px;
+
+  .nav_link {
+    color: #474747;
+    font-family: "Noto Sans JP", sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    display: block;
+    position: relative;
+    transition: 0.2s all;
+    font-size: 12px;
+    text-align: center;
+
+    span {
+      display: block;
+      font-size: 10px;
+      text-align: center;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "・";
+      left: 50%;
+      transform: translateX(-50%);
+      top: -22px;
+      opacity: 0;
+      transition: 0.3s all;
+    }
+  }
+}
+
+.contact-btn {
+  text-align: center;
+
+  a {
+    position: relative;
+    transition: 0.6s;
+    display: inline-block;
+    text-align: center;
+    -webkit-animation: fuwafuwa1 4s ease infinite;
+    animation: fuwafuwa1 4s ease infinite;
+  }
+}
+
+.text-link {
+  a {
+    color: #474747;
+  }
+}
+
+.nav_trigger {
+  display: none;
+  transition: 0.2s all;
+}
+
+@media screen and (max-width: 768px) {
+  .bg {
+    pointer-events: none;
+
+    .bg-wrap {
+      background: url("https://cocochi.design/wp-content/themes/cocochi/images/bg.jpg")
+        center no-repeat;
+      background-size: cover;
+
+      .bg-box {
+        &.bg-left {
+          display: none;
+        }
+
+        &.bg-right {
+          width: 92%;
+          margin: 0 auto;
+          background: none;
+        }
+      }
+
+      .bg-box-inner {
+        .frame {
+          top: 55%;
+          height: 80%;
+          width: 100%;
+        }
+      }
+    }
+
+    .fix-content {
+      &.fix-right {
+        width: 100%;
+        margin: 0 auto;
+        z-index: 0;
+
+        .f-sec {
+          .f-ani {
+            top: 43%;
+          }
+
+          .center-txt {
+            position: relative;
+            transform: inherit;
+            top: inherit;
+            bottom: -32%;
+            left: inherit;
+
+            .page-heading {
+              .page-sub {
+                top: -52px;
+              }
+            }
+          }
+        }
+
+        section {
+          &.content {
+            padding-bottom: 50px;
+            margin: 0 auto 100px;
+            width: 90%;
+          }
+          &#first-content {
+            padding-top: 50px;
+          }
+        }
+      }
+
+      .fix-img {
+        .img-box {
+          padding: 20px 0;
+        }
+      }
+    }
+  }
+
+  .inner-content {
+    .sub-heading {
+      font-size: 10px;
+    }
+
+    .sec-heading {
+      font-size: 20px;
+    }
+
+    .sec-txt {
+      font-size: 12px;
+    }
+  }
+
+  .flex-box {
+    .box02 {
+      width: 100%;
+      margin-bottom: 5%;
+
+      &:nth-of-type(odd) {
+        margin-right: 0%;
+      }
+    }
+  }
+
+  .sp_bg {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    z-index: 4;
+    pointer-events: none;
+    top: 0;
+
+    .bg-wrap {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+
+      .bg-box-inner {
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        .frame {
+          position: absolute;
+          top: 55%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 92%;
+          height: 80%;
+          pointer-events: none;
+
+          span {
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 14px;
+
+            &::before {
+              position: absolute;
+              display: block;
+              content: "";
+              top: 0;
+              right: 0;
+              height: 30px;
+              width: 30px;
+              border-top: 1px solid #949494;
+              border-right: 1px solid #949494;
+            }
+
+            &::after {
+              position: absolute;
+              display: block;
+              content: "";
+              top: 0;
+              left: 0;
+              height: 30px;
+              width: 30px;
+              border-top: 1px solid #949494;
+              border-left: 1px solid #949494;
+            }
+
+            &:nth-of-type(2) {
+              top: auto;
+              bottom: 0;
+              left: 0;
+              transform: scale(1, -1);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .fix-content {
+    &.fix-left {
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .box-top {
+    pointer-events: none;
+    z-index: 20;
+  }
+
+  .box-bottom {
+    top: 0;
+    left: 0;
+    bottom: inherit;
+    height: 100%;
+    transition: 0.4s all;
+    -webkit-transition: 0.4s all;
+    pointer-events: none;
+
+    .nav_other {
+      display: block;
+      position: absolute;
+      bottom: 30px;
+      opacity: 0;
+      pointer-events: none;
+      text-align: center;
+    }
+
+    nav {
+      opacity: 0;
+      pointer-events: none;
+      transform: inherit;
+    }
+  }
+
+  .nav_trigger {
+    display: block;
+    position: absolute;
+    width: 35px;
+    top: 30px;
+    right: 20px;
+    pointer-events: all;
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      width: 100%;
+      height: 2px;
+      background-color: #d5d5d5;
+      border-radius: 15px;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        background: #d5d5d5;
+        transition: all 0.3s;
+        margin-top: -8px;
+        width: 80%;
+        right: 0;
+        border-radius: 15px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        background: #d5d5d5;
+        transition: all 0.3s;
+        margin-top: 8px;
+        width: 50%;
+        right: 0;
+        border-radius: 15px;
+      }
+    }
+  }
+
+  .header_title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.4s all;
+    -webkit-transition: 0.4s all;
+    width: 100px;
+  }
+
+  .nav {
+    margin-left: inherit;
+    width: 100%;
+    transform: translateY(-100%);
+  }
+
+  .nav_lists {
+    display: block;
+    width: 100%;
+  }
+
+  .nav_list {
+    text-align: center;
+  }
+}

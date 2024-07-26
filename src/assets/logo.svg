@@ -1,0 +1,16 @@
+  <svg
+          className="logo-subTitle"
+          viewBox="0 0 500 100"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            id="curve"
+            d="M10,65 C150,10 350,10 490,80"
+            fill="transparent"
+          />
+          <text>
+            <textPath href="#curve" startOffset="50%" textAnchor="middle">
+              welcome
+            </textPath>
+          </text>
+        </svg>

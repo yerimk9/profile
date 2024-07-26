@@ -1,4 +1,5 @@
 import React from "react";
+// import titleLogo from "../assets/titleLogo.svg";
 
 function MainPage() {
   return (
@@ -305,7 +306,7 @@ function MainPage() {
         </section>
       </div>
 
-      <div class="bg sp_only">
+      <div class="sp_bg sp_only">
         <div class="bg-wrap">
           <div class="bg-box-inner">
             <div class="frame">
@@ -319,12 +320,31 @@ function MainPage() {
       <div class="fix-content fix-left">
         <div class="box-top">
           <h1 class="header_title">
-            <a href="https://cocochi.design">
-              <img
-                src="https://cocochi.design/wp-content/themes/cocochi/images/logo_cocochi.svg"
-                alt=""
-              />
-            </a>
+            <div className="titleLogo-container">
+              <div className="titleLogo-content">
+                <svg
+                  className="titleLogo-subTitle"
+                  viewBox="0 0 450 200"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="curve"
+                    d="M10,55 C150,20 390,10 690,65"
+                    fill="transparent"
+                  />
+                  <text>
+                    <textPath
+                      href="#curve"
+                      startOffset="50%"
+                      textAnchor="middle"
+                    >
+                      welcome
+                    </textPath>
+                  </text>
+                </svg>
+                <h1 className="titleLogo-title">김포폴</h1>
+              </div>
+            </div>
           </h1>
         </div>
         <div class="box-middle">

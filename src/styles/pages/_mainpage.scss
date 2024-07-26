@@ -1,0 +1,236 @@
+.main-container {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+
+  .fix-content {
+    &.fix-right {
+      margin-bottom: 0;
+    }
+  }
+
+  .sp_only {
+    display: none;
+  }
+
+  .fix-img {
+    overflow: hidden;
+
+    .img-box {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .other-content {
+    padding-top: 150px;
+  }
+}
+
+.other-content {
+  padding-bottom: 150px;
+
+  .other-box {
+    position: relative;
+    border: 1px solid #d5d5d5;
+    border-radius: 10px;
+    padding: 50px 30px;
+    width: 88%;
+    margin: 0 auto 140px;
+
+    .txt {
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      letter-spacing: 0.1em;
+      margin-bottom: 20px;
+    }
+
+    .tit {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -10px;
+      padding: 0 20px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background: #f6f6f6;
+        height: 3px;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 40%;
+        z-index: -1;
+      }
+    }
+  }
+
+  .sns-box {
+    width: 88%;
+    margin: 0 auto;
+
+    .tit {
+      width: 15%;
+      letter-spacing: 0.1em;
+      font-family: "Roboto", sans-serif;
+    }
+
+    .list {
+      width: 85%;
+
+      ul {
+        border-top: 1px solid #d5d5d5;
+        border-bottom: 1px solid #d5d5d5;
+
+        li {
+          &:not(:last-of-type) {
+            border-bottom: 1px solid #d5d5d5;
+          }
+
+          .icon {
+            width: 16%;
+            margin-right: 4%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+
+            img {
+              max-width: 40px;
+            }
+          }
+
+          .txt-box {
+            p {
+              font-family: "Noto Sans JP", sans-serif;
+              font-size: 14px;
+              line-height: 1.6em;
+
+              span {
+                display: block;
+                font-size: 12px;
+                font-family: "Roboto", sans-serif;
+                color: #949494;
+              }
+            }
+          }
+
+          a {
+            color: #474747;
+            align-items: center;
+            padding: 30px 40px 30px 10px;
+            position: relative;
+            letter-spacing: 0.1em;
+            transition: 0.6s;
+
+            &::before {
+              position: absolute;
+              content: "";
+              width: 12px;
+              height: 12px;
+              border-top: 1px solid #474747;
+              border-right: 1px solid #474747;
+              top: 50%;
+              transform: translateY(-50%) rotate(45deg);
+              right: 20px;
+              transition: 0.3s all;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    &.fix-right {
+      .f-sec {
+        .center-txt {
+          bottom: -34%;
+        }
+
+        .page-heading {
+          width: 30%;
+
+          span {
+            width: 150%;
+            top: -42px;
+          }
+
+          &::before {
+            width: 97px;
+            height: 45px;
+            top: -38px;
+            right: -100px;
+          }
+        }
+      }
+
+      section {
+        &.content {
+          padding-bottom: 0px;
+        }
+      }
+
+      .other-content {
+        width: 90%;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        .other-box {
+          margin: 0 auto 70px;
+
+          .txt {
+            font-size: 12px;
+          }
+        }
+
+        .sns-box {
+          width: 100%;
+
+          .tit {
+            width: 100%;
+            margin-bottom: 2em;
+          }
+
+          .list {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.titleLogo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.titleLogo-content {
+  position: relative; /* Ensure the SVG and text are positioned relative to this container */
+}
+
+.titleLogo-title {
+  font-size: 2rem;
+  letter-spacing: 0rem; /* Adjusted to zero as per final state */
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.titleLogo-subTitle {
+  font-size: 9rem;
+  letter-spacing: 2.2rem;
+  color: #333;
+  overflow: visible;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-72%) translateY(-50%);
+}
