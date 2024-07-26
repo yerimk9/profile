@@ -485,33 +485,36 @@ img {
     height: 80%;
     width: 100%;
   }
-  .bg .fix-content.fix-right {
+  .fix-content.fix-right {
     width: 100%;
     margin: 0 auto;
     z-index: 0;
   }
-  .bg .fix-content.fix-right .f-sec .f-ani {
+  .fix-content.fix-right .f-sec .f-ani {
     top: 43%;
   }
-  .bg .fix-content.fix-right .f-sec .center-txt {
+  .fix-content.fix-right .f-sec .center-txt {
     position: relative;
     transform: inherit;
     top: inherit;
     bottom: -32%;
     left: inherit;
   }
-  .bg .fix-content.fix-right .f-sec .center-txt .page-heading .page-sub {
+  .fix-content.fix-right .f-sec .center-txt .page-heading .page-sub {
     top: -52px;
   }
-  .bg .fix-content.fix-right section.content {
+  .fix-content.fix-right section.content {
     padding-bottom: 50px;
     margin: 0 auto 100px;
     width: 90%;
   }
-  .bg .fix-content.fix-right section#first-content {
+  .fix-content.fix-right section#first-content {
     padding-top: 50px;
   }
-  .bg .fix-content .fix-img .img-box {
+  .fix-content .fix-img {
+    width: 100%;
+  }
+  .fix-content .fix-img .img-box {
     padding: 20px 0;
   }
   .inner-content .sub-heading {
@@ -672,7 +675,7 @@ img {
   }
   .header_title {
     position: absolute;
-    top: 20px;
+    top: 40px;
     left: 50%;
     transform: translateX(-50%);
     transition: 0.4s all;
@@ -849,15 +852,7 @@ img {
   }
 }
 .titleLogo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
   text-align: center;
-}
-
-.titleLogo-content {
-  position: relative; /* Ensure the SVG and text are positioned relative to this container */
 }
 
 .titleLogo-title {
