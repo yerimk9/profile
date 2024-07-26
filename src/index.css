@@ -485,13 +485,16 @@ img {
     height: 80%;
     width: 100%;
   }
+  .fix-content .fix-img {
+    height: calc(100% - 450px) !important;
+  }
   .fix-content.fix-right {
     width: 100%;
     margin: 0 auto;
     z-index: 0;
   }
   .fix-content.fix-right .f-sec .f-ani {
-    top: 43%;
+    top: 41%;
   }
   .fix-content.fix-right .f-sec .center-txt {
     position: relative;
@@ -503,15 +506,8 @@ img {
   .fix-content.fix-right .f-sec .center-txt .page-heading .page-sub {
     top: -52px;
   }
-  .fix-content.fix-right section.content {
-    padding-bottom: 50px;
-    margin: 0 auto 100px;
-    width: 90%;
-  }
-  .fix-content.fix-right section#first-content {
-    padding-top: 50px;
-  }
   .fix-content .fix-img {
+    position: relative;
     width: 100%;
   }
   .fix-content .fix-img .img-box {
@@ -829,25 +825,25 @@ img {
   .main-container.fix-right section.content {
     padding-bottom: 0px;
   }
-  .main-container.fix-right .other-content {
+  .main-container .other-content {
     width: 90%;
     padding-top: 0;
     padding-bottom: 0;
   }
-  .main-container.fix-right .other-content .other-box {
+  .main-container .other-content .other-box {
     margin: 0 auto 70px;
   }
-  .main-container.fix-right .other-content .other-box .txt {
+  .main-container .other-content .other-box .txt {
     font-size: 12px;
   }
-  .main-container.fix-right .other-content .sns-box {
+  .main-container .other-content .sns-box {
     width: 100%;
   }
-  .main-container.fix-right .other-content .sns-box .tit {
+  .main-container .other-content .sns-box .tit {
     width: 100%;
     margin-bottom: 2em;
   }
-  .main-container.fix-right .other-content .sns-box .list {
+  .main-container .other-content .sns-box .list {
     width: 100%;
   }
 }
@@ -857,7 +853,7 @@ img {
 
 .titleLogo-title {
   font-size: 2rem;
-  letter-spacing: 0rem; /* Adjusted to zero as per final state */
+  letter-spacing: 0rem;
   color: #333;
   white-space: nowrap;
   overflow: hidden;

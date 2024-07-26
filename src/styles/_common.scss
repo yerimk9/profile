@@ -435,6 +435,9 @@
     }
   }
   .fix-content {
+    .fix-img {
+      height: calc(100% - 450px) !important;
+    }
     &.fix-right {
       width: 100%;
       margin: 0 auto;
@@ -442,7 +445,7 @@
 
       .f-sec {
         .f-ani {
-          top: 43%;
+          top: 41%;
         }
 
         .center-txt {
@@ -459,20 +462,10 @@
           }
         }
       }
-
-      section {
-        &.content {
-          padding-bottom: 50px;
-          margin: 0 auto 100px;
-          width: 90%;
-        }
-        &#first-content {
-          padding-top: 50px;
-        }
-      }
     }
 
     .fix-img {
+      position: relative;
       width: 100%;
       .img-box {
         padding: 20px 0;

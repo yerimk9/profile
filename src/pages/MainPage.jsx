@@ -5,31 +5,38 @@ function MainPage() {
     "https://i.pinimg.com/originals/b5/9d/8f/b59d8f8cbb54368862109db8324dc6b8.jpg"
   ); // 맨 처음에 보여줄 사진
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY;
 
-      // 맨 위로 스크롤이 올라가면 첫 번째 이미지를 보이게 설정
-      if (scrollPosition === 0) {
-        setCurrentImage(
-          "https://i.pinimg.com/originals/b5/9d/8f/b59d8f8cbb54368862109db8324dc6b8.jpg"
-        );
-        return;
+    // 화면 너비가 768픽셀 이하일 경우 이미지 고정
+    if (window.innerWidth <= 768) {
+      setCurrentImage(
+        "https://i.pinimg.com/originals/b5/9d/8f/b59d8f8cbb54368862109db8324dc6b8.jpg"
+      );
+      return;
+    }
+
+    // 화면 너비가 768픽셀 이상일 경우 스크롤에 따라 이미지 변경
+    const sections = document.querySelectorAll(".content");
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionBottom = sectionTop + section.clientHeight;
+      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+        const newImage = section.querySelector("img").src;
+        setCurrentImage(newImage);
       }
+    });
+  };
 
-      const sections = document.querySelectorAll(".content");
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        const sectionBottom = sectionTop + section.clientHeight;
-        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-          const newImage = section.querySelector("img").src;
-          setCurrentImage(newImage);
-        }
-      });
-    };
-
+  useEffect(() => {
+    // 처음 렌더링될 때와 화면 크기 변경 시 스크롤 이벤트 핸들러 설정
+    handleScroll(); // 초기 이미지 설정
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll); // 화면 크기 변경 시 이미지 업데이트
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    };
   }, []);
 
   return (
@@ -72,7 +79,7 @@ function MainPage() {
             <span>e</span>
           </a>
         </div>
-        <section className="content img-change" id="first-content">
+        <section className="content img-change">
           <div className="fix-img">
             <div className="img-box">
               <img
