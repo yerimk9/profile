@@ -22,7 +22,7 @@ function MainPage() {
           <div className="fix-img def img-1 f-ani">
             <div className="img-box">
               <img
-                src="https://cocochi.design/wp-content/uploads/2023/02/file_21.jpg"
+                src="https://i.pinimg.com/originals/b5/9d/8f/b59d8f8cbb54368862109db8324dc6b8.jpg"
                 alt="img1"
               />
             </div>
@@ -49,7 +49,7 @@ function MainPage() {
           <div className="fix-img">
             <div className="img-box">
               <img
-                src="https://cocochi.design/wp-content/uploads/2023/02/file_26-1-1024x768.jpg"
+                src="https://i.pinimg.com/originals/43/75/f3/4375f345717c2b75bc4bf6dd31782189.jpg"
                 alt="img2"
               />
             </div>
@@ -93,7 +93,7 @@ function MainPage() {
           <div className="fix-img">
             <div className="img-box">
               <img
-                src="https://cocochi.design/wp-content/uploads/2023/02/file_26-1-1024x768.jpg"
+                src="https://i.pinimg.com/originals/84/02/c2/8402c2436eed42595ce03ea36a9947d6.jpg"
                 alt="img2"
               />
             </div>
@@ -137,7 +137,7 @@ function MainPage() {
           <div className="fix-img">
             <div className="img-box">
               <img
-                src="https://cocochi.design/wp-content/uploads/2023/02/file_26-1-1024x768.jpg"
+                src="https://i.pinimg.com/originals/f2/b5/5e/f2b55eb862091d8c61a48da100811c98.jpg"
                 alt="img2"
               />
             </div>
@@ -182,43 +182,43 @@ function MainPage() {
           <div className="other-box">
             <p className="tit inline">
               <img
-                src="https://cocochi.design/wp-content/themes/cocochi/images/txt_partners.svg"
+                src="https://i.pinimg.com/originals/54/5b/36/545b3655d0c16b5e65053694642b622b.jpg"
                 alt="img3"
               />
             </p>
-            <div class="flex-box">
-              <p class="box02 txt">다카기 야스히라 웹 디자이너</p>
-              <p class="box02 txt">이노우 마사히로 편집자</p>
-              <p class="box02 txt">카토 오마사 스쿠</p>
-              <p class="box02 txt">카와무라 에히코 웹 엔지니어</p>
-              <p class="box02 txt">나가미네 쇼타 웹 엔지니어</p>
-              <p class="box02 txt">후지와라 케이 포토그래퍼</p>
-              <p class="box02 txt">折茂彰弘 크리에이티브 디렉터</p>
-              <p class="box02 txt">엔 피츠오 레터링 아티스트</p>
-              <p class="box02 txt">히라마츠 유스케 고스기유 3대째</p>
-              <p class="box02 txt">오야마 카즈히로 차 리스타</p>
-              <p class="box02 txt">오자와 히로유키 프로듀서</p>
+            <div className="flex-box">
+              <p className="box02 txt">다카기 야스히라 웹 디자이너</p>
+              <p className="box02 txt">이노우 마사히로 편집자</p>
+              <p className="box02 txt">카토 오마사 스쿠</p>
+              <p className="box02 txt">카와무라 에히코 웹 엔지니어</p>
+              <p className="box02 txt">나가미네 쇼타 웹 엔지니어</p>
+              <p className="box02 txt">후지와라 케이 포토그래퍼</p>
+              <p className="box02 txt">折茂彰弘 크리에이티브 디렉터</p>
+              <p className="box02 txt">엔 피츠오 레터링 아티스트</p>
+              <p className="box02 txt">히라마츠 유스케 고스기유 3대째</p>
+              <p className="box02 txt">오야마 카즈히로 차 리스타</p>
+              <p className="box02 txt">오자와 히로유키 프로듀서</p>
             </div>
           </div>
           <div className="other-box">
             <p className="tit inline">
               <img
-                src="https://cocochi.design/wp-content/themes/cocochi/images/txt_partners.svg"
+                src="https://i.pinimg.com/originals/9f/89/fb/9f89fb5d73eb2b5ba7b3f77533b88a70.jpg"
                 alt="img3"
               />
             </p>
-            <div class="flex-box">
-              <p class="box02 txt">다카기 야스히라 웹 디자이너</p>
-              <p class="box02 txt">이노우 마사히로 편집자</p>
-              <p class="box02 txt">카토 오마사 스쿠</p>
-              <p class="box02 txt">카와무라 에히코 웹 엔지니어</p>
-              <p class="box02 txt">나가미네 쇼타 웹 엔지니어</p>
-              <p class="box02 txt">후지와라 케이 포토그래퍼</p>
-              <p class="box02 txt">折茂彰弘 크리에이티브 디렉터</p>
-              <p class="box02 txt">엔 피츠오 레터링 아티스트</p>
-              <p class="box02 txt">히라마츠 유스케 고스기유 3대째</p>
-              <p class="box02 txt">오야마 카즈히로 차 리스타</p>
-              <p class="box02 txt">오자와 히로유키 프로듀서</p>
+            <div className="flex-box">
+              <p className="box02 txt">다카기 야스히라 웹 디자이너</p>
+              <p className="box02 txt">이노우 마사히로 편집자</p>
+              <p className="box02 txt">카토 오마사 스쿠</p>
+              <p className="box02 txt">카와무라 에히코 웹 엔지니어</p>
+              <p className="box02 txt">나가미네 쇼타 웹 엔지니어</p>
+              <p className="box02 txt">후지와라 케이 포토그래퍼</p>
+              <p className="box02 txt">折茂彰弘 크리에이티브 디렉터</p>
+              <p className="box02 txt">엔 피츠오 레터링 아티스트</p>
+              <p className="box02 txt">히라마츠 유스케 고스기유 3대째</p>
+              <p className="box02 txt">오야마 카즈히로 차 리스타</p>
+              <p className="box02 txt">오자와 히로유키 프로듀서</p>
             </div>
           </div>
           <div className="sns-box">
@@ -228,13 +228,13 @@ function MainPage() {
                 <ul>
                   <li>
                     <a href="https://twitter.com/cam_i_poipoi" class="flex-box">
-                      <div class="icon">
+                      <div className="icon">
                         <img
                           src="https://cocochi.design/wp-content/uploads/2023/01/icon_twitter.svg"
                           alt=""
                         />
                       </div>
-                      <div class="txt-box">
+                      <div className="txt-box">
                         <p>
                           <span>트위터</span>
                           흐리게
@@ -245,15 +245,15 @@ function MainPage() {
                   <li>
                     <a
                       href="https://www.instagram.com/cam_i_poipoi/"
-                      class="flex-box"
+                      className="flex-box"
                     >
-                      <div class="icon">
+                      <div className="icon">
                         <img
                           src="https://cocochi.design/wp-content/uploads/2023/01/icon_instagram.svg"
                           alt=""
                         />
                       </div>
-                      <div class="txt-box">
+                      <div className="txt-box">
                         <p>
                           <span>Instagram @cam_i_poipoi</span>
                           사진을 흘려
@@ -264,15 +264,15 @@ function MainPage() {
                   <li>
                     <a
                       href="https://www.instagram.com/poipoi_no_ie/"
-                      class="flex-box"
+                      className="flex-box"
                     >
-                      <div class="icon">
+                      <div className="icon">
                         <img
                           src="https://cocochi.design/wp-content/uploads/2023/01/icon_instagram.svg"
                           alt=""
                         />
                       </div>
-                      <div class="txt-box">
+                      <div className="txt-box">
                         <p>
                           <span>Instagram @poipoi_no_ie</span>
                           나의 집을 흘려
@@ -283,15 +283,15 @@ function MainPage() {
                   <li>
                     <a
                       href="https://www.instagram.com/pencilman_pitsuwo/"
-                      class="flex-box"
+                      className="flex-box"
                     >
-                      <div class="icon">
+                      <div className="icon">
                         <img
                           src="https://cocochi.design/wp-content/uploads/2023/01/icon_instagram.svg"
                           alt=""
                         />
                       </div>
-                      <div class="txt-box">
+                      <div className="txt-box">
                         <p>
                           <span>Instagram @pencilman_pitsuwo</span>내 가장 친한
                           친구 인 엔 피츠오입니다.
@@ -306,10 +306,10 @@ function MainPage() {
         </section>
       </div>
 
-      <div class="sp_bg sp_only">
-        <div class="bg-wrap">
-          <div class="bg-box-inner">
-            <div class="frame">
+      <div className="sp_bg sp_only">
+        <div className="bg-wrap">
+          <div className="bg-box-inner">
+            <div className="frame">
               <span></span>
               <span></span>
             </div>
@@ -317,9 +317,9 @@ function MainPage() {
         </div>
       </div>
 
-      <div class="fix-content fix-left">
-        <div class="box-top">
-          <h1 class="header_title">
+      <div className="fix-content fix-left">
+        <div className="box-top">
+          <h1 className="header_title">
             <div className="titleLogo-container">
               <div className="titleLogo-content">
                 <svg
@@ -347,47 +347,50 @@ function MainPage() {
             </div>
           </h1>
         </div>
-        <div class="box-middle">
-          <div class="img-box"></div>
+        <div className="box-middle">
+          <div className="img-box"></div>
         </div>
-        <div class="box-bottom">
-          <nav class="nav">
-            <ul class="nav_lists">
-              <li class="nav_list">
-                <a class="nav_link" href="https://cocochi.design">
+        <div className="box-bottom">
+          <nav className="nav">
+            <ul className="nav_lists">
+              <li className="nav_list">
+                <a className="nav_link" href="https://cocochi.design">
                   집<span>홈</span>
                 </a>
               </li>
-              <li class="nav_list">
-                <a class="nav_link" href="https://cocochi.design/#linkThink">
+              <li className="nav_list">
+                <a
+                  className="nav_link"
+                  href="https://cocochi.design/#linkThink"
+                >
                   기모치<span>attitude</span>
                 </a>
               </li>
-              <li class="nav_list">
-                <a class="nav_link" href="https://cocochi.design/#linkWork">
+              <li className="nav_list">
+                <a className="nav_link" href="https://cocochi.design/#linkWork">
                   시루시<span>works</span>
                 </a>
               </li>
-              <li class="nav_list">
-                <a class="nav_link" href="https://cocochi.design/profile">
+              <li className="nav_list">
+                <a className="nav_link" href="https://cocochi.design/profile">
                   나<span>프로필</span>
                 </a>
               </li>
             </ul>
           </nav>
-          <div class="nav_other">
-            <p class="text-link contact-btn">
-              <a class="fuwafuwa1" href="https://cocochi.design/contact">
+          <div className="nav_other">
+            <p className="text-link contact-btn">
+              <a className="fuwafuwa1" href="https://cocochi.design/contact">
                 <img
                   src="https://cocochi.design/wp-content/themes/cocochi/images/btn_contact.svg"
                   alt=""
                 />
               </a>
             </p>
-            <p class="credit">copyright onf Inc.</p>
+            <p className="credit">copyright onf Inc.</p>
           </div>
         </div>
-        <div class="nav_trigger">
+        <div className="nav_trigger">
           <span></span>
         </div>
       </div>
