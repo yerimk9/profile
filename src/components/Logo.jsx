@@ -6,7 +6,7 @@ function Logo() {
     const splitText = (el) => {
       el.innerHTML = el.textContent.replace(
         /(\S)/g,
-        '<span className="char" style="display: inline-block; transform: translateY(100%); opacity: 0;">$1</span>'
+        '<span class="char" style="display: inline-block; transform: translateY(100%); opacity: 0;">$1</span>'
       );
     };
 
