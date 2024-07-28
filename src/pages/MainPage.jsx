@@ -1,5 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { Element, Link as ScrollLink } from "react-scroll";
+import html5 from "../assets/pngs/html5.png";
+import css3 from "../assets/pngs/css3.png";
+import sass from "../assets/pngs/sass.png";
+import tailwind from "../assets/pngs/tailwind_css.png";
+import js from "../assets/pngs/js.png";
+import ts from "../assets/pngs/typescript.png";
+import react from "../assets/pngs/react.png";
+import nextjs from "../assets/svgs/nextjs.svg";
+import react_query from "../assets/pngs/react-query.png";
+import redux_tookit from "../assets/pngs/redux_tookit.png";
+import recoil from "../assets/pngs/recoil.png";
 
 function MainPage() {
   const [currentImage, setCurrentImage] = useState(
@@ -117,8 +128,8 @@ function MainPage() {
                 </p>
                 <p className="sec-heading">김예림</p>
                 <div className="sec-txt">
-                  <p className="p1">주식회사 온후 대표</p>
-                  <p className="p1">디자인 파트너 “여기” 주재</p>
+                  <p className="p1">프론트엔드 개발자를 꿈꾸며,</p>
+                  {/* <p className="p1">디자인 파트너 “여기” 주재</p> */}
                   <p>&nbsp;</p>
                   <p className="p1">주식회사 코스기유 커먼 디자이너</p>
                   <p>주식회사 추출사 커먼 디자이너</p>
@@ -162,32 +173,119 @@ function MainPage() {
                   <span className="num">01</span>
                   스킬
                 </p>
-                <p className="sec-heading">김예림</p>
-                <div className="sec-txt">
-                  <p className="p1">주식회사 온후 대표</p>
-                  <p className="p1">디자인 파트너 “여기” 주재</p>
-                  <p>&nbsp;</p>
-                  <p className="p1">주식회사 코스기유 커먼 디자이너</p>
-                  <p>주식회사 추출사 커먼 디자이너</p>
-                  <p className="p1">
-                    주식회사 목욕탕 구라시 아트 디렉터/디자이너
-                  </p>
-                  <p>&nbsp;</p>
-                  <p className="p1">
-                    사이타마현 사이타마시 출생. 나가노현 스와시 거주{" "}
-                    <span className="s1">2022</span>년{" "}
-                    <span className="s1">11</span> 월~). 디자인계 대학을 졸업
-                    후, 디자인 제작 회사에서 그래픽 디자이너를 거쳐{" "}
-                    <span className="s1">2020</span> 년 독립. 로고 디자인을
-                    비롯해 각종 그래픽, 웹, 사인 계획 등의 「표시」를 만들고,
-                    「여기」가 즐길 때까지를 디자인할 수 있도록 시도하고
-                    있습니다.
-                    <span className="s1">2021</span> 년부터 주식회사 고스기유와
-                    주식회사 목욕탕 구라시, 2023년부터 주식회사 추출사에 참가{" "}
-                    <span className="s1">2023</span> 년 법인화, 주식회사 온후
-                    설립.
-                  </p>
-                  <p>&nbsp;</p>
+                <div className="skill-container">
+                  <ul>
+                    <li>
+                      <img src={html5} alt="html5" />
+                      <div>
+                        <p>HTML5</p>
+                        <p>
+                          웹접근성, 표준성을 준수하며 시멘틱태그를 이용해 마크업
+                          할 수 있습니다.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src={css3} alt="css3" />
+                      <div>
+                        <p>CSS3</p>
+                        <p>
+                          CSS3를 이용해 다양한 스타일링과 애니메이션을 구현할 수
+                          있습니다.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src={sass} alt="sass" />
+                      <div>
+                        <p>SCSS</p>
+                        <p>
+                          SCSS를 사용해 중첩, 변수, 연산자, 조건문, 반복문 등을
+                          활용할 수 있습니다.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src={tailwind} alt="tailwind" />
+                      <div>
+                        <p>tailwind CSS</p>
+                        <p>
+                          미리 세팅된 유틸리티 클래스를 활용해 HTML 코드 내에서
+                          스타일링할 수 있습니다.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src={js} alt="js" />
+                      <div>
+                        <p>JavaScript</p>
+                        <p>
+                          JavaScript를 사용해 다양한 기능과 동적인 웹 페이지를
+                          구현할 수 있습니다.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src={ts} alt="ts" />
+                      <div>
+                        <p>TypeScript</p>
+                        <p>
+                          TypeScript를 사용해 더 안전하고 유지보수 가능한 코드를
+                          작성할 수 있습니다.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src={react} alt="react" />
+                      <div>
+                        <p>React</p>
+                        <p>
+                          React를 사용해 컴포넌트 기반의 인터랙티브한 사용자
+                          인터페이스를 구현할 수 있습니다.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src={nextjs} alt="nextjs" />
+                      <div>
+                        <p>Next.js</p>
+                        <p>
+                          Next.js를 사용해 서버사이드 렌더링과 클라이언트사이드
+                          렌더링을 적절히 활용할 수 있습니다.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src={react_query} alt="react_query" />
+                      <div>
+                        <p>React Query</p>
+                        <p>
+                          React Query를 사용해 데이터 캐싱을 통해 반복적인
+                          비동기 데이터 호출을 방지할 수 있습니다.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src={redux_tookit} alt="redux_tookit" />
+                      <div>
+                        <p>Redux-Tookit</p>
+                        <p>
+                          Redux Toolkit을 사용해 간편하게 상태 관리와 비동기
+                          로직을 구현할 수 있습니다.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src={recoil} alt="recoil" />
+                      <div>
+                        <p>Recoil</p>
+                        <p>
+                          Recoil을 사용해 React의 Context API와 유사한 방식으로
+                          컴포넌트 내에서 상태를 관리할 수 있습니다
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
