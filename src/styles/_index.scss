@@ -1,0 +1,126 @@
+.main-container {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+
+  .bg {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+
+    .bg-wrap {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      top: 0;
+      left: 0;
+
+      .bg-box {
+        width: 50%;
+        height: 100%;
+        position: relative;
+
+        .bg-box-inner {
+          position: relative;
+          height: 100%;
+          width: 100%;
+
+          .frame {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            height: 90%;
+            pointer-events: none;
+
+            span {
+              position: absolute;
+              display: block;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 14px;
+
+              &::before {
+                position: absolute;
+                display: block;
+                content: "";
+                top: 0;
+                right: 0;
+                height: 30px;
+                width: 30px;
+                border-top: 1px solid #949494;
+                border-right: 1px solid #949494;
+              }
+
+              &::after {
+                position: absolute;
+                display: block;
+                content: "";
+                top: 0;
+                left: 0;
+                height: 30px;
+                width: 30px;
+                border-top: 1px solid #949494;
+                border-left: 1px solid #949494;
+              }
+
+              &:nth-of-type(2) {
+                top: auto;
+                bottom: 0;
+                left: 0;
+                transform: scale(1, -1);
+              }
+            }
+          }
+        }
+
+        &.bg-right {
+          background: url("https://cocochi.design/wp-content/themes/cocochi/images/bg.jpg");
+          background-size: cover;
+        }
+      }
+    }
+  }
+
+  .fix-content {
+    width: 100%;
+    position: relative;
+
+    &.fix-right {
+      margin-bottom: 0;
+      width: 50%;
+      margin-left: auto;
+      margin-right: 0;
+      position: relative;
+      //   margin-bottom: 380px;
+
+      section {
+        margin: 0 auto 150px;
+        width: min(80%, 660px);
+        z-index: 30;
+        position: relative;
+
+        &.content {
+          padding-top: 150px;
+          position: relative;
+
+          &::before {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 88%;
+            border-bottom: 1px solid #d5d5d5;
+            left: 50%;
+            transform: translateX(-50%);
+            pointer-events: none;
+          }
+        }
+      }
+    }
+  }
+}

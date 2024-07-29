@@ -94,81 +94,6 @@ img {
   width: 100%;
 }
 
-.bg {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  overflow-x: hidden;
-}
-.bg .bg-wrap {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  top: 0;
-  left: 0;
-}
-.bg .bg-wrap .bg-box-inner {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-.bg .bg-wrap .bg-box-inner .frame {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  height: 90%;
-  pointer-events: none;
-}
-.bg .bg-wrap .bg-box-inner .frame span {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 14px;
-}
-.bg .bg-wrap .bg-box-inner .frame span::before {
-  position: absolute;
-  display: block;
-  content: "";
-  top: 0;
-  right: 0;
-  height: 30px;
-  width: 30px;
-  border-top: 1px solid #949494;
-  border-right: 1px solid #949494;
-}
-.bg .bg-wrap .bg-box-inner .frame span::after {
-  position: absolute;
-  display: block;
-  content: "";
-  top: 0;
-  left: 0;
-  height: 30px;
-  width: 30px;
-  border-top: 1px solid #949494;
-  border-left: 1px solid #949494;
-}
-.bg .bg-wrap .bg-box-inner .frame span:nth-of-type(2) {
-  top: auto;
-  bottom: 0;
-  left: 0;
-  transform: scale(1, -1);
-}
-.bg .bg-wrap .bg-box {
-  width: 50%;
-  height: 100%;
-  position: relative;
-}
-.bg .bg-wrap .bg-box.bg-right {
-  background: url("https://cocochi.design/wp-content/themes/cocochi/images/bg.jpg");
-  background-size: cover;
-}
-
 .fix-content {
   width: 100%;
   position: relative;
@@ -411,53 +336,6 @@ img {
   align-items: center;
   pointer-events: all;
 }
-.box-bottom .nav {
-  z-index: 51;
-  margin-left: inherit;
-}
-.box-bottom .nav_other {
-  display: none;
-}
-
-.nav {
-  margin-left: auto;
-  z-index: 52;
-}
-
-.nav_lists {
-  display: flex;
-}
-
-.nav_list {
-  padding: 20px;
-}
-.nav_list .nav_link {
-  color: #474747;
-  font-family: "Noto Sans JP", sans-serif;
-  letter-spacing: 2px;
-  font-weight: bold;
-  display: block;
-  position: relative;
-  transition: 0.2s all;
-  font-size: 12px;
-  text-align: center;
-}
-.nav_list .nav_link span {
-  display: block;
-  font-size: 10px;
-  text-align: center;
-  font-weight: 500;
-  letter-spacing: 1px;
-}
-.nav_list .nav_link::before {
-  position: absolute;
-  content: "・";
-  left: 50%;
-  transform: translateX(-50%);
-  top: -22px;
-  opacity: 0;
-  transition: 0.3s all;
-}
 
 .contact-btn {
   text-align: center;
@@ -475,33 +353,7 @@ img {
   color: #474747;
 }
 
-.nav_trigger {
-  display: none;
-  transition: 0.2s all;
-  z-index: 52;
-}
-
 @media screen and (max-width: 768px) {
-  .bg {
-    pointer-events: none;
-  }
-  .bg .bg-wrap {
-    background: url("https://cocochi.design/wp-content/themes/cocochi/images/bg.jpg") center no-repeat;
-    background-size: cover;
-  }
-  .bg .bg-wrap .bg-box.bg-left {
-    display: none;
-  }
-  .bg .bg-wrap .bg-box.bg-right {
-    width: 92%;
-    margin: 0 auto;
-    background: none;
-  }
-  .bg .bg-wrap .bg-box-inner .frame {
-    top: 55%;
-    height: 80%;
-    width: 100%;
-  }
   .fix-content .fix-img {
     height: calc(100% - 450px) !important;
   }
@@ -627,65 +479,20 @@ img {
     transition: 0.6s all;
     -webkit-transition: 0.6s all;
     height: 100%;
-  }
-  .box-bottom .nav_other {
-    display: block;
-    position: absolute;
-    bottom: 30px;
-    opacity: 0;
-    pointer-events: none;
-    text-align: center;
+    /* .nav_other {
+      display: block;
+      position: absolute;
+      bottom: 30px;
+      opacity: 0;
+      pointer-events: none;
+      text-align: center;
+    } */
   }
   .box-bottom nav {
     opacity: 1;
     pointer-events: all;
     transition: 0.6s all;
     -webkit-transition: 0.6s all;
-  }
-  .nav_trigger {
-    cursor: pointer;
-    display: block;
-    position: absolute;
-    width: 35px;
-    top: 30px;
-    right: 20px;
-    pointer-events: all;
-    z-index: 51;
-  }
-  .nav_trigger span {
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    width: 100%;
-    height: 2px;
-    background-color: #d5d5d5;
-    border-radius: 15px;
-  }
-  .nav_trigger span::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    background: #d5d5d5;
-    transition: all 0.3s;
-    margin-top: -8px;
-    width: 80%;
-    right: 0;
-    border-radius: 15px;
-  }
-  .nav_trigger span::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    background: #d5d5d5;
-    transition: all 0.3s;
-    margin-top: 8px;
-    width: 50%;
-    right: 0;
-    border-radius: 15px;
   }
   .header_title {
     position: absolute;
@@ -696,19 +503,6 @@ img {
     -webkit-transition: 0.4s all;
     width: 100px;
   }
-  .nav {
-    margin-left: inherit;
-    width: 100%;
-    transform: translateY(0%);
-    z-index: 52;
-  }
-  .nav_lists {
-    display: block;
-    width: 100%;
-  }
-  .nav_list {
-    text-align: center;
-  }
 }
 .hidden {
   display: none;
@@ -718,6 +512,93 @@ img {
   width: 100%;
   overflow-x: hidden;
   position: relative;
+}
+.main-container .bg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.main-container .bg .bg-wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+}
+.main-container .bg .bg-wrap .bg-box {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.main-container .bg .bg-wrap .bg-box .bg-box-inner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.main-container .bg .bg-wrap .bg-box .bg-box-inner .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  pointer-events: none;
+}
+.main-container .bg .bg-wrap .bg-box .bg-box-inner .frame span {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 14px;
+}
+.main-container .bg .bg-wrap .bg-box .bg-box-inner .frame span::before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  right: 0;
+  height: 30px;
+  width: 30px;
+  border-top: 1px solid #949494;
+  border-right: 1px solid #949494;
+}
+.main-container .bg .bg-wrap .bg-box .bg-box-inner .frame span::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  border-top: 1px solid #949494;
+  border-left: 1px solid #949494;
+}
+.main-container .bg .bg-wrap .bg-box .bg-box-inner .frame span:nth-of-type(2) {
+  top: auto;
+  bottom: 0;
+  left: 0;
+  transform: scale(1, -1);
+}
+.main-container .bg .bg-wrap .bg-box.bg-right {
+  background: url("https://cocochi.design/wp-content/themes/cocochi/images/bg.jpg");
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container .bg {
+    pointer-events: none;
+  }
+  .main-container .bg .bg-wrap {
+    background: url("https://cocochi.design/wp-content/themes/cocochi/images/bg.jpg") center no-repeat;
+    background-size: cover;
+  }
+  .main-container .bg .bg-wrap .bg-box.bg-right {
+    display: none;
+  }
 }
 .main-container section {
   z-index: 30 !important;
@@ -836,48 +717,6 @@ img {
   transition: 0.3s all;
 }
 
-@media screen and (max-width: 768px) {
-  .main-container.fix-right .f-sec .center-txt {
-    bottom: -34%;
-  }
-  .main-container.fix-right .f-sec .page-heading {
-    width: 30%;
-  }
-  .main-container.fix-right .f-sec .page-heading span {
-    width: 150%;
-    top: -42px;
-  }
-  .main-container.fix-right .f-sec .page-heading::before {
-    width: 97px;
-    height: 45px;
-    top: -38px;
-    right: -100px;
-  }
-  .main-container.fix-right section.content {
-    padding-bottom: 0px;
-  }
-  .main-container .other-content {
-    width: 90%;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  .main-container .other-content .other-box {
-    margin: 0 auto 70px;
-  }
-  .main-container .other-content .other-box .txt {
-    font-size: 12px;
-  }
-  .main-container .other-content .sns-box {
-    width: 100%;
-  }
-  .main-container .other-content .sns-box .tit {
-    width: 100%;
-    margin-bottom: 2em;
-  }
-  .main-container .other-content .sns-box .list {
-    width: 100%;
-  }
-}
 .skill-container {
   display: flex;
   justify-content: flex-start;
@@ -932,6 +771,71 @@ img {
   width: 50px;
 }
 
+.project-content {
+  margin: 24px auto;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+
+.project-links-container ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.project-links-container ul .project-link {
+  border: 1px solid #e6e6e6;
+  border-radius: 15px;
+  font-size: 14px;
+  line-height: 30px;
+  padding: 0 15px;
+}
+.project-links-container ul .project-link:hover {
+  background: #949494;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container.fix-right .f-sec .center-txt {
+    bottom: -34%;
+  }
+  .main-container.fix-right .f-sec .page-heading {
+    width: 30%;
+  }
+  .main-container.fix-right .f-sec .page-heading span {
+    width: 150%;
+    top: -42px;
+  }
+  .main-container.fix-right .f-sec .page-heading::before {
+    width: 97px;
+    height: 45px;
+    top: -38px;
+    right: -100px;
+  }
+  .main-container.fix-right section.content {
+    padding-bottom: 0px;
+  }
+  .main-container .other-content {
+    width: 90%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .main-container .other-content .other-box {
+    margin: 0 auto 70px;
+  }
+  .main-container .other-content .other-box .txt {
+    font-size: 12px;
+  }
+  .main-container .other-content .sns-box {
+    width: 100%;
+  }
+  .main-container .other-content .sns-box .tit {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  .main-container .other-content .sns-box .list {
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .skill-container {
     padding: 0;
@@ -960,29 +864,6 @@ img {
     width: 40px !important;
   }
 }
-.project-content {
-  margin: 24px auto;
-  line-height: 30px;
-  letter-spacing: 0;
-}
-
-.project-links-container ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.project-links-container ul .project-link {
-  border: 1px solid #e6e6e6;
-  border-radius: 15px;
-  font-size: 14px;
-  line-height: 30px;
-  padding: 0 15px;
-}
-.project-links-container ul .project-link:hover {
-  background: #949494;
-  color: #fff;
-}
-
 .logo-container {
   display: flex;
   align-items: center;
@@ -1036,6 +917,103 @@ img {
   .logo-subTitle {
     font-size: 2rem;
     letter-spacing: 1rem;
+  }
+}
+.nav .nav_lists {
+  display: flex;
+}
+.nav .nav_lists .nav_list {
+  padding: 20px;
+}
+.nav .nav_lists .nav_list .nav_link {
+  cursor: pointer;
+  color: #474747;
+  font-family: "Noto Sans JP", sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  display: block;
+  position: relative;
+  transition: 0.2s all;
+  font-size: 12px;
+  text-align: center;
+}
+.nav .nav_lists .nav_list .nav_link span {
+  display: block;
+  font-size: 10px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.nav .nav_lists .nav_list .nav_link::before {
+  position: absolute;
+  content: "・";
+  left: 50%;
+  transform: translateX(-50%);
+  top: -22px;
+  opacity: 0;
+  transition: 0.3s all;
+}
+.nav .nav_trigger {
+  display: none;
+  transition: 0.2s all;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    margin-left: inherit;
+    width: 100%;
+    transform: translateY(0%);
+  }
+  .nav .nav_lists {
+    display: block;
+    width: 100%;
+  }
+  .nav .nav_lists .nav_list {
+    text-align: center;
+  }
+  .nav_trigger {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    width: 35px;
+    top: 30px;
+    right: 20px;
+    pointer-events: all;
+  }
+  .nav_trigger span {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #d5d5d5;
+    border-radius: 15px;
+  }
+  .nav_trigger span::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: #d5d5d5;
+    transition: all 0.3s;
+    margin-top: -8px;
+    width: 80%;
+    right: 0;
+    border-radius: 15px;
+  }
+  .nav_trigger span::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: #d5d5d5;
+    transition: all 0.3s;
+    margin-top: 8px;
+    width: 50%;
+    right: 0;
+    border-radius: 15px;
   }
 }
 .titleLogo-container {

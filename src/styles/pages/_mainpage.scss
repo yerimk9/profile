@@ -1,8 +1,4 @@
 .main-container {
-  width: 100%;
-  overflow-x: hidden;
-  position: relative;
-
   section {
     z-index: 30 !important;
     position: relative !important;
@@ -147,66 +143,6 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .main-container {
-    &.fix-right {
-      .f-sec {
-        .center-txt {
-          bottom: -34%;
-        }
-
-        .page-heading {
-          width: 30%;
-
-          span {
-            width: 150%;
-            top: -42px;
-          }
-
-          &::before {
-            width: 97px;
-            height: 45px;
-            top: -38px;
-            right: -100px;
-          }
-        }
-      }
-
-      section {
-        &.content {
-          padding-bottom: 0px;
-        }
-      }
-    }
-    .other-content {
-      width: 90%;
-      padding-top: 0;
-      padding-bottom: 0;
-
-      .other-box {
-        margin: 0 auto 70px;
-
-        .txt {
-          font-size: 12px;
-        }
-      }
-
-      .sns-box {
-        width: 100%;
-
-        .tit {
-          width: 100%;
-          margin-bottom: 2em;
-        }
-
-        .list {
-          width: 100%;
-        }
-      }
-    }
-  }
-}
-
 .skill-container {
   display: flex;
   justify-content: flex-start;
@@ -269,6 +205,93 @@
   }
 }
 
+.project-content {
+  margin: 24px auto;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+
+.project-links-container {
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .project-link {
+      border: 1px solid #e6e6e6;
+      border-radius: 15px;
+      font-size: 14px;
+      line-height: 30px;
+      padding: 0 15px;
+
+      &:hover {
+        background: #949494;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    &.fix-right {
+      .f-sec {
+        .center-txt {
+          bottom: -34%;
+        }
+
+        .page-heading {
+          width: 30%;
+
+          span {
+            width: 150%;
+            top: -42px;
+          }
+
+          &::before {
+            width: 97px;
+            height: 45px;
+            top: -38px;
+            right: -100px;
+          }
+        }
+      }
+
+      section {
+        &.content {
+          padding-bottom: 0px;
+        }
+      }
+    }
+    .other-content {
+      width: 90%;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      .other-box {
+        margin: 0 auto 70px;
+
+        .txt {
+          font-size: 12px;
+        }
+      }
+
+      .sns-box {
+        width: 100%;
+
+        .tit {
+          width: 100%;
+          margin-bottom: 2em;
+        }
+
+        .list {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 500px) {
   .skill-container {
     padding: 0;
@@ -299,33 +322,6 @@
         img {
           width: 40px !important;
         }
-      }
-    }
-  }
-}
-
-.project-content {
-  margin: 24px auto;
-  line-height: 30px;
-  letter-spacing: 0;
-}
-
-.project-links-container {
-  ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    .project-link {
-      border: 1px solid #e6e6e6;
-      border-radius: 15px;
-      font-size: 14px;
-      line-height: 30px;
-      padding: 0 15px;
-
-      &:hover {
-        background: #949494;
-        color: #fff;
       }
     }
   }

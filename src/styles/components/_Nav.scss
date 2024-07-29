@@ -1,0 +1,110 @@
+.nav {
+  .nav_lists {
+    display: flex;
+
+    .nav_list {
+      padding: 20px;
+
+      .nav_link {
+        cursor: pointer;
+        color: #474747;
+        font-family: "Noto Sans JP", sans-serif;
+        letter-spacing: 2px;
+        font-weight: bold;
+        display: block;
+        position: relative;
+        transition: 0.2s all;
+        font-size: 12px;
+        text-align: center;
+
+        span {
+          display: block;
+          font-size: 10px;
+          text-align: center;
+          font-weight: 500;
+          letter-spacing: 1px;
+        }
+
+        &::before {
+          position: absolute;
+          content: "・";
+          left: 50%;
+          transform: translateX(-50%);
+          top: -22px;
+          opacity: 0;
+          transition: 0.3s all;
+        }
+      }
+    }
+  }
+
+  .nav_trigger {
+    display: none;
+    transition: 0.2s all;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    margin-left: inherit;
+    width: 100%;
+    transform: translateY(0%);
+
+    .nav_lists {
+      display: block;
+      width: 100%;
+
+      .nav_list {
+        text-align: center;
+      }
+    }
+  }
+
+  .nav_trigger {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    width: 35px;
+    top: 30px;
+    right: 20px;
+    pointer-events: all;
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      width: 100%;
+      height: 2px;
+      background-color: #d5d5d5;
+      border-radius: 15px;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        background: #d5d5d5;
+        transition: all 0.3s;
+        margin-top: -8px;
+        width: 80%;
+        right: 0;
+        border-radius: 15px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        background: #d5d5d5;
+        transition: all 0.3s;
+        margin-top: 8px;
+        width: 50%;
+        right: 0;
+        border-radius: 15px;
+      }
+    }
+  }
+}
