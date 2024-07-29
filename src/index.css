@@ -739,27 +739,6 @@ img {
 .main-container .other-content {
   padding-top: 150px;
 }
-.main-container .titleLogo-container {
-  text-align: center;
-}
-.main-container .titleLogo-title {
-  font-size: 2rem;
-  letter-spacing: 1rem;
-  color: #333;
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
-}
-.main-container .titleLogo-subTitle {
-  font-size: 1.5rem;
-  letter-spacing: 1rem;
-  color: #333;
-  overflow: visible;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translateX(-78%) translateY(-50%);
-}
 
 .other-content {
   z-index: 30;
@@ -897,27 +876,6 @@ img {
   }
   .main-container .other-content .sns-box .list {
     width: 100%;
-  }
-  .main-container .titleLogo-container {
-    text-align: center;
-  }
-  .main-container .titleLogo-title {
-    font-size: 2rem;
-    letter-spacing: 0rem;
-    color: #333;
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-  }
-  .main-container .titleLogo-subTitle {
-    font-size: 9rem;
-    letter-spacing: 2.2rem;
-    color: #333;
-    overflow: visible;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-72%) translateY(-50%);
   }
 }
 .skill-container {
@@ -1078,5 +1036,50 @@ img {
   .logo-subTitle {
     font-size: 2rem;
     letter-spacing: 1rem;
+  }
+}
+.titleLogo-container {
+  text-align: center;
+}
+.titleLogo-container .titleLogo-subTitle {
+  font-size: 1.5rem;
+  letter-spacing: 1rem;
+  color: #333;
+  overflow: visible;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-78%) translateY(-50%);
+}
+.titleLogo-container .titleLogo-title {
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+
+@media all and (max-width: 768px) {
+  .titleLogo-container {
+    text-align: center;
+  }
+  .titleLogo-container .titleLogo-subTitle {
+    font-size: 9rem;
+    letter-spacing: 2.2rem;
+    color: #333;
+    overflow: visible;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-72%) translateY(-50%);
+  }
+  .titleLogo-container .titleLogo-title {
+    font-size: 2rem;
+    letter-spacing: 0rem;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
   }
 }

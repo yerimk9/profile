@@ -30,30 +30,6 @@
   .other-content {
     padding-top: 150px;
   }
-
-  .titleLogo-container {
-    text-align: center;
-  }
-
-  .titleLogo-title {
-    font-size: 2rem;
-    letter-spacing: 1rem;
-    color: #333;
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-  }
-
-  .titleLogo-subTitle {
-    font-size: 1.5rem;
-    letter-spacing: 1rem;
-    color: #333;
-    overflow: visible;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translateX(-78%) translateY(-50%);
-  }
 }
 
 .other-content {
@@ -227,29 +203,6 @@
           width: 100%;
         }
       }
-    }
-    .titleLogo-container {
-      text-align: center;
-    }
-
-    .titleLogo-title {
-      font-size: 2rem;
-      letter-spacing: 0rem;
-      color: #333;
-      white-space: nowrap;
-      overflow: hidden;
-      display: inline-block;
-    }
-
-    .titleLogo-subTitle {
-      font-size: 9rem;
-      letter-spacing: 2.2rem;
-      color: #333;
-      overflow: visible;
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-72%) translateY(-50%);
     }
   }
 }
