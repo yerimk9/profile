@@ -1,24 +1,26 @@
 import React, { useState, useEffect } from "react";
 import { Element, Link as ScrollLink } from "react-scroll";
-import html5 from "../assets/pngs/html5.png";
-import css3 from "../assets/pngs/css3.png";
-import sass from "../assets/pngs/sass.png";
-import tailwind from "../assets/pngs/tailwind_css.png";
-import js from "../assets/pngs/js.png";
-import ts from "../assets/pngs/typescript.png";
-import react from "../assets/pngs/react.png";
-import nextjs from "../assets/svgs/nextjs.svg";
-import react_query from "../assets/pngs/react-query.png";
-import redux_tookit from "../assets/pngs/redux_tookit.png";
-import recoil from "../assets/pngs/recoil.png";
-import phone from "../assets/svgs/phone.svg";
-import mail from "../assets/svgs/mail.svg";
-import github from "../assets/svgs/github.svg";
-import notion from "../assets/pngs/notion.png";
-import visual_studio from "../assets/pngs/visual-studio.png";
-import npm from "../assets/pngs/npm.png";
-import jejuBus from "../assets/pngs/jejubus.png";
-import newsRoom from "../assets/pngs/newsroom.png";
+import {
+  html5,
+  css3,
+  sass,
+  tailwind_css,
+  js,
+  ts,
+  react,
+  react_query,
+  redux_tookit,
+  recoil,
+  phone,
+  mail,
+  github,
+  notion,
+  visual_studio,
+  npm,
+  jejubus,
+  newsroom,
+  nextjs,
+} from "../assets";
 
 function MainPage() {
   const [currentImage, setCurrentImage] = useState(
@@ -215,7 +217,7 @@ function MainPage() {
                       </div>
                     </li>
                     <li>
-                      <img src={tailwind} alt="tailwind" />
+                      <img src={tailwind_css} alt="tailwind_css" />
                       <div>
                         <p>tailwind CSS</p>
                         <p>
@@ -365,7 +367,7 @@ function MainPage() {
                   프로젝트 - 1
                 </p>
                 <p className="sec-heading margin-0">JEJU BUS</p>
-                <img src={jejuBus} alt="jejuBus" />
+                <img src={jejubus} alt="jejuBus" />
                 <div className="sec-txt">
                   <p className="text-sm">기간 : (2024.01.01 ~ 2024.01.25)</p>
                   <p className="project-content">
@@ -430,7 +432,7 @@ function MainPage() {
                 프로젝트 - 2
               </p>
               <p className="sec-heading margin-0">NEWS ROOM</p>
-              <img src={newsRoom} alt="jejuBus" />
+              <img src={newsroom} alt="jejuBus" />
               <div className="sec-txt">
                 <p className="text-sm">기간 : (2024.07.19 ~ 2024.07.25)</p>
                 <p className="project-content">
