@@ -985,6 +985,25 @@ img {
     width: 40px !important;
   }
 }
+/* .skills-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  section {
+    width: min(90%, 660px) !important;
+  }
+}
+ */
 .logo-container {
   display: flex;
   align-items: center;

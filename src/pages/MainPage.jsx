@@ -11,6 +11,10 @@ import nextjs from "../assets/svgs/nextjs.svg";
 import react_query from "../assets/pngs/react-query.png";
 import redux_tookit from "../assets/pngs/redux_tookit.png";
 import recoil from "../assets/pngs/recoil.png";
+import phone from "../assets/svgs/phone.svg";
+import mail from "../assets/svgs/mail.svg";
+import github from "../assets/svgs/github.svg";
+import notion from "../assets/pngs/notion.png";
 
 function MainPage() {
   const [currentImage, setCurrentImage] = useState(
@@ -157,7 +161,7 @@ function MainPage() {
             </div>
           </section>
         </Element>
-        <Element name="skill">
+        <Element name="skill" className="skills-container">
           <section className="content img-change">
             <div className="fix-img">
               <div className="img-box">
@@ -392,77 +396,68 @@ function MainPage() {
                 <div className="list">
                   <ul>
                     <li>
-                      <a
-                        href="https://twitter.com/cam_i_poipoi"
-                        class="flex-box"
-                      >
+                      <a href="tel:010-9921-2811" className="flex-box">
                         <div className="icon">
-                          <img
-                            src="https://cocochi.design/wp-content/uploads/2023/01/icon_twitter.svg"
-                            alt=""
-                          />
+                          <img src={phone} alt="phone" />
                         </div>
                         <div className="txt-box">
                           <p>
-                            <span>트위터</span>
-                            흐리게
+                            <span>PHONE</span>
+                            010-9921-2811
                           </p>
                         </div>
                       </a>
                     </li>
                     <li>
                       <a
-                        href="https://www.instagram.com/cam_i_poipoi/"
+                        href="mailto:rhrh037@naver.com"
                         className="flex-box"
+                        target="_blank"
+                        rel="noreferrer"
                       >
                         <div className="icon">
-                          <img
-                            src="https://cocochi.design/wp-content/uploads/2023/01/icon_instagram.svg"
-                            alt=""
-                          />
+                          <img src={mail} alt="mail" />
                         </div>
                         <div className="txt-box">
                           <p>
-                            <span>Instagram @cam_i_poipoi</span>
-                            사진을 흘려
+                            <span>E-MAIL</span>
+                            rhrh037@naver.com
                           </p>
                         </div>
                       </a>
                     </li>
                     <li>
                       <a
-                        href="https://www.instagram.com/poipoi_no_ie/"
+                        href="https://github.com/yerimk9"
                         className="flex-box"
+                        target="_blank"
+                        rel="noreferrer"
                       >
                         <div className="icon">
-                          <img
-                            src="https://cocochi.design/wp-content/uploads/2023/01/icon_instagram.svg"
-                            alt=""
-                          />
+                          <img src={github} alt="github" />
                         </div>
                         <div className="txt-box">
                           <p>
-                            <span>Instagram @poipoi_no_ie</span>
-                            나의 집을 흘려
+                            <span>GHTHUB</span>
+                            https://github.com/yerimk9
                           </p>
                         </div>
                       </a>
                     </li>
                     <li>
                       <a
-                        href="https://www.instagram.com/pencilman_pitsuwo/"
+                        href="http://ajar-dolphin-d6b.notion.site"
                         className="flex-box"
+                        target="_blank"
+                        rel="noreferrer"
                       >
                         <div className="icon">
-                          <img
-                            src="https://cocochi.design/wp-content/uploads/2023/01/icon_instagram.svg"
-                            alt=""
-                          />
+                          <img src={notion} alt="notion" />
                         </div>
                         <div className="txt-box">
                           <p>
-                            <span>Instagram @pencilman_pitsuwo</span>내 가장
-                            친한 친구 인 엔 피츠오입니다.
+                            <span>NOTION</span>
+                            http://ajar-dolphin-d6b.notion.site
                           </p>
                         </div>
                       </a>
