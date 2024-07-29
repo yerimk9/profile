@@ -887,6 +887,7 @@ img {
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
+  opacity: 1; /* Ensure visibility */
 }
 
 .logo-subTitle {
