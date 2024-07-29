@@ -97,5 +97,3 @@ function Logo() {
 }
 
 export default Logo;
-
-// tdfsa
