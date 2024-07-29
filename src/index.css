@@ -292,8 +292,8 @@ img {
 .main-container .fix-img {
   position: fixed;
   width: 50%;
-  height: calc(100% - 250px);
-  top: 50%;
+  height: 60%;
+  top: 47%;
   left: 0;
   transform: translateY(-50%);
   opacity: 0;
@@ -309,6 +309,9 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.main-container .fix-img .img-box img {
+  height: 100%;
 }
 .main-container .fix-img.def {
   opacity: 1;

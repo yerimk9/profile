@@ -212,7 +212,6 @@
       height: 100vh;
       top: 0;
       left: 0;
-      // z-index: 50;
       pointer-events: none;
       width: 50%;
     }
@@ -220,8 +219,8 @@
   .fix-img {
     position: fixed;
     width: 50%;
-    height: calc(100% - 250px);
-    top: 50%;
+    height: 60%;
+    top: 47%;
     left: 0;
     transform: translateY(-50%);
     opacity: 0;
@@ -237,6 +236,10 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+
+      img {
+        height: 100%;
+      }
     }
 
     &.def {
