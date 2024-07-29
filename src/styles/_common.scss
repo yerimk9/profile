@@ -53,8 +53,8 @@
                 right: 0;
                 height: 30px;
                 width: 30px;
-                border-top: 1px solid #949494;
-                border-right: 1px solid #949494;
+                border-top: 1px solid $text-color2;
+                border-right: 1px solid $text-color2;
               }
 
               &::after {
@@ -65,8 +65,8 @@
                 left: 0;
                 height: 30px;
                 width: 30px;
-                border-top: 1px solid #949494;
-                border-left: 1px solid #949494;
+                border-top: 1px solid $text-color2;
+                border-left: 1px solid $text-color2;
               }
 
               &:nth-of-type(2) {
@@ -111,7 +111,7 @@
             content: "";
             height: 100%;
             width: 88%;
-            border-bottom: 1px solid #d5d5d5;
+            border-bottom: 1px solid $border-color2;
             left: 50%;
             transform: translateX(-50%);
             pointer-events: none;
@@ -166,12 +166,12 @@
           font-weight: bold;
           letter-spacing: 0;
           display: block;
-          color: #474747;
+          color: $text-color1;
 
           &::before {
             position: absolute;
             content: "";
-            background: #d5d5d5;
+            background: $border-color2;
             width: 1px;
             height: 100px;
             left: 50%;
@@ -196,7 +196,7 @@
             top: clamp(-70px, -8vw, -90px);
             width: 100%;
             text-align: center;
-            color: #949494;
+            color: $text-color2;
             font-family: "Roboto", sans-serif;
             font-size: clamp(10px, 1.1vw, 14px);
             font-weight: normal;
@@ -253,7 +253,7 @@
 
   .inner-content {
     font-family: "Noto Sans JP", sans-serif;
-    color: #474747;
+    color: $text-color1;
     letter-spacing: 0.2em;
 
     .txt-wrap {
@@ -371,7 +371,7 @@
 
   .text-link {
     a {
-      color: #474747;
+      color: $text-color1;
     }
   }
 
@@ -506,8 +506,8 @@
                 right: 0;
                 height: 30px;
                 width: 30px;
-                border-top: 1px solid #949494;
-                border-right: 1px solid #949494;
+                border-top: 1px solid $text-color2;
+                border-right: 1px solid $text-color2;
               }
 
               &::after {
@@ -518,8 +518,8 @@
                 left: 0;
                 height: 30px;
                 width: 30px;
-                border-top: 1px solid #949494;
-                border-left: 1px solid #949494;
+                border-top: 1px solid $text-color2;
+                border-left: 1px solid $text-color2;
               }
 
               &:nth-of-type(2) {

@@ -696,6 +696,7 @@ img {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-direction: row;
   min-height: 130px;
   padding: 0 10px;
   letter-spacing: 0 !important;
@@ -869,8 +870,8 @@ img {
 }
 .logo-container {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 100vh;
   background-color: #f0f0f0;
   text-align: center;
@@ -887,13 +888,13 @@ img {
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
-  opacity: 1; /* Ensure visibility */
+  opacity: 1;
 }
 
 .logo-subTitle {
   font-size: 1.5rem;
   letter-spacing: 2rem;
-  color: #333;
+  color: #474747;
   white-space: nowrap;
   opacity: 0;
   transform: translate(5px, -100%);
@@ -1026,7 +1027,7 @@ img {
 .titleLogo-container .titleLogo-subTitle {
   font-size: 1.5rem;
   letter-spacing: 1rem;
-  color: #333;
+  color: #474747;
   overflow: visible;
   position: absolute;
   top: 70%;
@@ -1036,7 +1037,7 @@ img {
 .titleLogo-container .titleLogo-title {
   font-size: 2rem;
   letter-spacing: 1rem;
-  color: #333;
+  color: #474747;
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
@@ -1049,7 +1050,7 @@ img {
   .titleLogo-container .titleLogo-subTitle {
     font-size: 9rem;
     letter-spacing: 2.2rem;
-    color: #333;
+    color: #474747;
     overflow: visible;
     position: absolute;
     top: 0;
@@ -1059,7 +1060,7 @@ img {
   .titleLogo-container .titleLogo-title {
     font-size: 2rem;
     letter-spacing: 0rem;
-    color: #333;
+    color: #474747;
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;

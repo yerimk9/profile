@@ -1,9 +1,7 @@
 .logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexCenter;
   height: 100vh;
-  background-color: #f0f0f0;
+  background-color: $bg-color1;
   text-align: center;
 }
 
@@ -18,13 +16,13 @@
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
-  opacity: 1; /* Ensure visibility */
+  opacity: 1;
 }
 
 .logo-subTitle {
   font-size: 1.5rem;
   letter-spacing: 2rem;
-  color: #333;
+  color: $text-color1;
   white-space: nowrap;
   opacity: 0;
   transform: translate(5px, -100%);
