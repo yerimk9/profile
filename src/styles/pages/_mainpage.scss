@@ -4,7 +4,7 @@
   position: relative;
 
   section {
-    z-index: 100000 !important;
+    z-index: 30 !important;
     position: relative !important;
   }
 
@@ -57,7 +57,7 @@
 }
 
 .other-content {
-  z-index: 100000;
+  z-index: 30;
   position: relative;
 
   .other-box {

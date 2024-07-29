@@ -21,6 +21,7 @@ import {
   newsroom,
   nextjs,
 } from "../assets";
+import Nav from "../components/Nav";
 
 function MainPage() {
   const [currentImage, setCurrentImage] = useState(
@@ -98,10 +99,10 @@ function MainPage() {
             </div>
           </div>
           <div className="center-txt">
-            <p className="page-heading">
+            <div className="page-heading">
               <span className="page-sub">profile·about me </span>
               <p className="">김예림</p>
-            </p>
+            </div>
           </div>
           <ScrollLink
             to="introduce"
@@ -139,7 +140,6 @@ function MainPage() {
                 <p className="sec-heading">김예림</p>
                 <div className="sec-txt">
                   <p className="p1">프론트엔드 개발자를 꿈꾸며,</p>
-                  {/* <p className="p1">디자인 파트너 “여기” 주재</p> */}
                   <p>&nbsp;</p>
                   <p className="p1">주식회사 코스기유 커먼 디자이너</p>
                   <p>주식회사 추출사 커먼 디자이너</p>
@@ -584,54 +584,7 @@ function MainPage() {
             <div className="img-box"></div>
           </div>
           <div className={`box-bottom ${isNavVisible ? "" : "hidden"}`}>
-            <nav className="nav">
-              <ul className="nav_lists">
-                <li className="nav_list">
-                  <ScrollLink
-                    to="introduce"
-                    smooth={true}
-                    duration={1000}
-                    className="nav_link"
-                    href="/"
-                  >
-                    Introduction<span>소개</span>
-                  </ScrollLink>
-                </li>
-                <li className="nav_list">
-                  <ScrollLink
-                    to="skill"
-                    smooth={true}
-                    duration={1000}
-                    className="nav_link"
-                    href="/"
-                  >
-                    Skill<span>스킬</span>
-                  </ScrollLink>
-                </li>
-                <li className="nav_list">
-                  <ScrollLink
-                    className="nav_link"
-                    to="project-1"
-                    smooth={true}
-                    duration={1000}
-                    href="/"
-                  >
-                    Project<span>프로젝트</span>
-                  </ScrollLink>
-                </li>
-                <li className="nav_list">
-                  <ScrollLink
-                    to="sns"
-                    smooth={true}
-                    duration={1000}
-                    href="/"
-                    className="nav_link"
-                  >
-                    SNS<span>소셜미디어</span>
-                  </ScrollLink>
-                </li>
-              </ul>
-            </nav>
+            <Nav />
           </div>
           <div className="nav_trigger" onClick={toggleNav}>
             <span></span>

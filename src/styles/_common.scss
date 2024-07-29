@@ -149,7 +149,7 @@
       }
 
       .read_more {
-        z-index: 100000;
+        z-index: 30;
         position: absolute;
         left: 50%;
         bottom: 8%;
@@ -346,6 +346,7 @@
   pointer-events: all;
 
   .nav {
+    z-index: 51;
     margin-left: inherit;
   }
 
@@ -356,6 +357,8 @@
 
 .nav {
   margin-left: auto;
+
+  z-index: 52;
 }
 
 .nav_lists {
@@ -418,6 +421,7 @@
 .nav_trigger {
   display: none;
   transition: 0.2s all;
+  z-index: 52;
 }
 
 @media screen and (max-width: 768px) {
@@ -634,6 +638,7 @@
     top: 30px;
     right: 20px;
     pointer-events: all;
+    z-index: 51;
 
     span {
       display: inline-block;
@@ -688,6 +693,7 @@
     margin-left: inherit;
     width: 100%;
     transform: translateY(0%);
+    z-index: 52;
   }
 
   .nav_lists {
