@@ -139,30 +139,54 @@ function MainPage() {
                   자기소개
                 </p>
                 <p className="sec-heading">김예림</p>
-                <div className="sec-txt">
-                  <p className="p1">프론트엔드 개발자를 꿈꾸며,</p>
-                  <p>&nbsp;</p>
-                  <p className="p1">주식회사 코스기유 커먼 디자이너</p>
-                  <p>주식회사 추출사 커먼 디자이너</p>
-                  <p className="p1">
-                    주식회사 목욕탕 구라시 아트 디렉터/디자이너
-                  </p>
-                  <p>&nbsp;</p>
-                  <p className="p1">
-                    사이타마현 사이타마시 출생. 나가노현 스와시 거주{" "}
-                    <span className="s1">2022</span>년{" "}
-                    <span className="s1">11</span> 월~). 디자인계 대학을 졸업
-                    후, 디자인 제작 회사에서 그래픽 디자이너를 거쳐{" "}
-                    <span className="s1">2020</span> 년 독립. 로고 디자인을
-                    비롯해 각종 그래픽, 웹, 사인 계획 등의 「표시」를 만들고,
-                    「여기」가 즐길 때까지를 디자인할 수 있도록 시도하고
-                    있습니다.
-                    <span className="s1">2021</span> 년부터 주식회사 고스기유와
-                    주식회사 목욕탕 구라시, 2023년부터 주식회사 추출사에 참가{" "}
-                    <span className="s1">2023</span> 년 법인화, 주식회사 온후
-                    설립.
-                  </p>
-                  <p>&nbsp;</p>
+                <div className="sec-txt introduce-content-container">
+                  <p className="introduce-heading">학력</p>
+                  <ul>
+                    <li>
+                      <p className="school-name">
+                        경기대학교 AI 컴퓨터공학부 컴퓨터공학전공
+                      </p>
+                      <div className="edu-date">
+                        2021.03.01 ~ 2022.01.10 (중퇴)
+                      </div>
+                    </li>
+                    <li>
+                      <p className="school-name">부경대학교 경영학부</p>
+                      <div className="edu-date">
+                        2022.03.02 ~ 2023.03.23 (중퇴)
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div className="sec-txt introduce-content-container">
+                  <p className="introduce-heading">교육</p>
+
+                  <ul>
+                    <li>
+                      <p className="edu-name">
+                        {" "}
+                        스마트 관광을 위한 AI 웹서비스 개발{" "}
+                      </p>
+                      <div className="edu-date">2023.06.05 ~ 2023.07.31</div>
+                      <ul>
+                        <li>- 웹서비스 및 개발 환경에 대한 이해</li>
+                        <li>- HTML5, CSS3 기본 지식 및 마크업 능력</li>
+                        <li>- JavaScript에 대한 이해</li>
+                      </ul>
+                    </li>
+                    <li className="mt-10">
+                      <p className="edu-name">
+                        제로베이스 프론트엔드 취업 스쿨 19기
+                      </p>
+                      <div className="edu-date">2023.09.01 ~ 2024.04.02</div>
+                      <ul>
+                        <li>- HTML, CSS, SCSS를 이용한 클론코딩</li>
+                        <li>- JavaScript 개념 정리 및 활용 프로젝트</li>
+                        <li>- React 개념 정리 및 활용 프로젝트</li>
+                        <li>- 컴퓨터공학 지식(CS) - 자료구조 / 알고리즘</li>
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>

@@ -225,6 +225,41 @@
       }
     }
   }
+
+  .introduce-content-container {
+    margin-top: 30px;
+    .introduce-heading {
+      border: 1px solid #e6e6e6;
+      border-radius: 15px;
+      font-size: 14px;
+      line-height: 30px;
+      padding: 0 15px;
+      width: max-content;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 14px;
+
+      .school-name {
+        font-weight: 600;
+      }
+
+      .edu-name {
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      .edu-date {
+        font-size: 12px;
+        color: #949494;
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
