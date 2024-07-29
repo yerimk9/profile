@@ -551,7 +551,7 @@ function MainPage() {
           </section>
         </Element>
 
-        <div className="fix-content fix-left">
+        <div className={`fix-content fix-left ${isNavVisible ? "zindex" : ""}`}>
           <div className="box-top">
             <h1 className="header_title">
               <SmallLogo />

@@ -235,7 +235,7 @@ img {
 }
 .main-container .fix-content.fix-right .f-sec .read_more {
   cursor: pointer;
-  z-index: 30;
+  z-index: 100;
   position: absolute;
   left: 50%;
   bottom: 8%;
@@ -286,7 +286,6 @@ img {
   height: 100vh;
   top: 0;
   left: 0;
-  z-index: 5;
   pointer-events: none;
   width: 50%;
 }
@@ -441,7 +440,6 @@ img {
   .main-container .fix-content.fix-right {
     width: 100%;
     margin: 0 auto;
-    z-index: 0;
   }
   .main-container .fix-content.fix-right .f-sec .f-ani {
     top: 41%;
@@ -484,7 +482,6 @@ img {
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    z-index: 4;
     pointer-events: none;
     top: 0;
   }
@@ -552,7 +549,6 @@ img {
   }
   .main-container .box-top {
     pointer-events: none;
-    z-index: 20;
     top: 25px;
   }
   .main-container .box-bottom {
@@ -577,8 +573,12 @@ img {
     width: 100px;
   }
 }
+.zindex {
+  z-index: 50;
+}
+
 .main-container section {
-  z-index: 30 !important;
+  z-index: 50;
   position: relative !important;
 }
 .main-container .fix-content.fix-right {
@@ -595,7 +595,6 @@ img {
   height: auto;
 }
 .main-container .other-content {
-  z-index: 30;
   position: relative;
   padding-top: 150px;
 }
@@ -989,7 +988,6 @@ img {
 }
 .titleLogo-container {
   text-align: center;
-  z-index: 100;
 }
 .titleLogo-container .titleLogo-subTitle {
   font-size: 1.5rem;

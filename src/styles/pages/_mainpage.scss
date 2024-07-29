@@ -1,6 +1,6 @@
 .main-container {
   section {
-    z-index: 30 !important;
+    z-index: 50;
     position: relative !important;
   }
 
@@ -24,7 +24,6 @@
   }
 
   .other-content {
-    z-index: 30;
     position: relative;
     padding-top: 150px;
     .other-box {
