@@ -323,6 +323,9 @@ img {
   width: 96%;
   margin: 0 auto;
 }
+.inner-content .txt-wrap:not(:first-of-type) {
+  margin-top: 100px;
+}
 .inner-content .txt-wrap .sub-heading {
   font-size: 12px;
   line-height: 1.4em;

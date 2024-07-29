@@ -15,6 +15,8 @@ import phone from "../assets/svgs/phone.svg";
 import mail from "../assets/svgs/mail.svg";
 import github from "../assets/svgs/github.svg";
 import notion from "../assets/pngs/notion.png";
+import visual_studio from "../assets/pngs/visual-studio.png";
+import npm from "../assets/pngs/npm.png";
 
 function MainPage() {
   const [currentImage, setCurrentImage] = useState(
@@ -177,6 +179,7 @@ function MainPage() {
                   <span className="num">01</span>
                   스킬
                 </p>
+                <p className="sub-heading">FRONT-END SKILL</p>
                 <div className="skill-container">
                   <ul>
                     <li>
@@ -286,6 +289,54 @@ function MainPage() {
                         <p>
                           Recoil을 사용해 React의 Context API와 유사한 방식으로
                           컴포넌트 내에서 상태를 관리할 수 있습니다
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="txt-wrap">
+                <p className="sub-heading">USING TOOL</p>
+                <div className="skill-container">
+                  <ul>
+                    <li>
+                      <img src={visual_studio} alt="visual_studio" />
+                      <div>
+                        <p>VS Code</p>
+                        <p>
+                          Visual Studio Code(VSCode)를 주로 사용하는 코딩
+                          툴이며, 코딩에 편리한 확장 프로그램들을 설치해
+                          사용하고 있습니다.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src={github} alt="github" />
+                      <div>
+                        <p>Github</p>
+                        <p>
+                          VSCode와 연동된 GitHub을 사용하여 각 기능마다 올리고
+                          있습니다.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src={notion} alt="notion" />
+                      <div>
+                        <p>Notion</p>
+                        <p>
+                          Notion을 통해 프로젝트 일지, 회고록, 트러블슈팅 등을
+                          정리하고 있습니다.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src={npm} alt="npm" />
+                      <div>
+                        <p>NPM</p>
+                        <p>
+                          프로젝트 세팅과 라이브러리 설치 시 NPM을 사용하고
+                          있습니다.
                         </p>
                       </div>
                     </li>
