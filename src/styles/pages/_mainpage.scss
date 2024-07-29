@@ -344,22 +344,29 @@
   }
 }
 
-/* .skills-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.project-content {
+  margin: 24px auto;
+  line-height: 30px;
+  letter-spacing: 0;
+}
 
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none; 
-  -ms-overflow-style: none; 
-  &::-webkit-scrollbar {
-    display: none;
-  }
+.project-links-container {
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-  section {
-    width: min(90%, 660px) !important;
+    .project-link {
+      border: 1px solid #e6e6e6;
+      border-radius: 15px;
+      font-size: 14px;
+      line-height: 30px;
+      padding: 0 15px;
+
+      &:hover {
+        background: #949494;
+        color: #fff;
+      }
+    }
   }
 }
- */

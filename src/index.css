@@ -988,25 +988,29 @@ img {
     width: 40px !important;
   }
 }
-/* .skills-container {
+.project-content {
+  margin: 24px auto;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+
+.project-links-container ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none; 
-  -ms-overflow-style: none; 
-  &::-webkit-scrollbar {
-    display: none;
-  }
-
-  section {
-    width: min(90%, 660px) !important;
-  }
 }
- */
+.project-links-container ul .project-link {
+  border: 1px solid #e6e6e6;
+  border-radius: 15px;
+  font-size: 14px;
+  line-height: 30px;
+  padding: 0 15px;
+}
+.project-links-container ul .project-link:hover {
+  background: #949494;
+  color: #fff;
+}
+
 .logo-container {
   display: flex;
   align-items: center;

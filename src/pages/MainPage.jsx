@@ -17,6 +17,8 @@ import github from "../assets/svgs/github.svg";
 import notion from "../assets/pngs/notion.png";
 import visual_studio from "../assets/pngs/visual-studio.png";
 import npm from "../assets/pngs/npm.png";
+import jejuBus from "../assets/pngs/jejubus.png";
+import newsRoom from "../assets/pngs/newsroom.png";
 
 function MainPage() {
   const [currentImage, setCurrentImage] = useState(
@@ -362,32 +364,50 @@ function MainPage() {
                   <span className="num">02</span>
                   프로젝트 - 1
                 </p>
-                <p className="sec-heading">김예림</p>
+                <p className="sec-heading margin-0">JEJU BUS</p>
+                <img src={jejuBus} alt="jejuBus" />
                 <div className="sec-txt">
-                  <p className="p1">주식회사 온후 대표</p>
-                  <p className="p1">디자인 파트너 “여기” 주재</p>
-                  <p>&nbsp;</p>
-                  <p className="p1">주식회사 코스기유 커먼 디자이너</p>
-                  <p>주식회사 추출사 커먼 디자이너</p>
-                  <p className="p1">
-                    주식회사 목욕탕 구라시 아트 디렉터/디자이너
+                  <p className="text-sm">기간 : (2024.01.01 ~ 2024.01.25)</p>
+                  <p className="project-content">
+                    제주에 있는 버스 노선 및 정류소 정보, 실시간 도착 예정 정보,
+                    주변 정류소 위치, 버스 시간표, 경로 검색, 그리고 공지사항을
+                    제공합니다.
+                    <br />
+                    Firebase를 활용한 로그인 및 리뷰 관리, 제주 공공 API를 통한
+                    공지사항 제공, Naver 및 Kakao Map API를 이용한 경로 및
+                    정류소 검색 기능을 구현하였습니다.
                   </p>
-                  <p>&nbsp;</p>
-                  <p className="p1">
-                    사이타마현 사이타마시 출생. 나가노현 스와시 거주{" "}
-                    <span className="s1">2022</span>년{" "}
-                    <span className="s1">11</span> 월~). 디자인계 대학을 졸업
-                    후, 디자인 제작 회사에서 그래픽 디자이너를 거쳐{" "}
-                    <span className="s1">2020</span> 년 독립. 로고 디자인을
-                    비롯해 각종 그래픽, 웹, 사인 계획 등의 「표시」를 만들고,
-                    「여기」가 즐길 때까지를 디자인할 수 있도록 시도하고
-                    있습니다.
-                    <span className="s1">2021</span> 년부터 주식회사 고스기유와
-                    주식회사 목욕탕 구라시, 2023년부터 주식회사 추출사에 참가{" "}
-                    <span className="s1">2023</span> 년 법인화, 주식회사 온후
-                    설립.
-                  </p>
-                  <p>&nbsp;</p>
+                  <div className="project-links-container">
+                    <ul>
+                      <li className="project-link">
+                        <a
+                          href="https://jejubus-guide.vercel.app/"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          사이트 바로가기
+                        </a>
+                      </li>
+                      <li className="project-link">
+                        <a
+                          href="https://github.com/yerimk9/jejubus-guide"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          GitHub
+                        </a>
+                      </li>
+                      <li className="project-link">
+                        <a
+                          href="https://www.notion.so/70b3c54037684531b885cef3d85a8f68"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Notion
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -406,34 +426,42 @@ function MainPage() {
           <div className="inner-content">
             <div className="txt-wrap">
               <p className="sub-heading">
-                <span className="num">03</span>
+                <span className="num">02</span>
                 프로젝트 - 2
               </p>
-              <p className="sec-heading">김예림</p>
+              <p className="sec-heading margin-0">NEWS ROOM</p>
+              <img src={newsRoom} alt="jejuBus" />
               <div className="sec-txt">
-                <p className="p1">주식회사 온후 대표</p>
-                <p className="p1">디자인 파트너 “여기” 주재</p>
-                <p>&nbsp;</p>
-                <p className="p1">주식회사 코스기유 커먼 디자이너</p>
-                <p>주식회사 추출사 커먼 디자이너</p>
-                <p className="p1">
-                  주식회사 목욕탕 구라시 아트 디렉터/디자이너
+                <p className="text-sm">기간 : (2024.07.19 ~ 2024.07.25)</p>
+                <p className="project-content">
+                  뉴스 기사 제공 플랫폼은 공공 API를 통해 실시간으로 뉴스 기사를
+                  제공하며, GSAP를 이용한 동적인 애니메이션으로 시각적 매력을
+                  더합니다. <br />
+                  페이지네이션으로 뉴스 목록을 쉽게 탐색할 수 있도록 하고, 랜덤
+                  높이 값을 적용해 시각적으로 흥미로운 레이아웃을 구현했습니다.
                 </p>
-                <p>&nbsp;</p>
-                <p className="p1">
-                  사이타마현 사이타마시 출생. 나가노현 스와시 거주{" "}
-                  <span className="s1">2022</span>년{" "}
-                  <span className="s1">11</span> 월~). 디자인계 대학을 졸업 후,
-                  디자인 제작 회사에서 그래픽 디자이너를 거쳐{" "}
-                  <span className="s1">2020</span> 년 독립. 로고 디자인을 비롯해
-                  각종 그래픽, 웹, 사인 계획 등의 「표시」를 만들고, 「여기」가
-                  즐길 때까지를 디자인할 수 있도록 시도하고 있습니다.
-                  <span className="s1">2021</span> 년부터 주식회사 고스기유와
-                  주식회사 목욕탕 구라시, 2023년부터 주식회사 추출사에 참가{" "}
-                  <span className="s1">2023</span> 년 법인화, 주식회사 온후
-                  설립.
-                </p>
-                <p>&nbsp;</p>
+                <div className="project-links-container">
+                  <ul>
+                    <li className="project-link">
+                      <a
+                        href="https://news-room-self.vercel.app/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        사이트 바로가기
+                      </a>
+                    </li>
+                    <li className="project-link">
+                      <a
+                        href="https://github.com/yerimk9/news-room"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        GitHub
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
