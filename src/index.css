@@ -230,6 +230,7 @@ img {
   text-align: center;
 }
 .fix-content.fix-right .f-sec .read_more {
+  z-index: 100000;
   position: absolute;
   left: 50%;
   bottom: 8%;
@@ -713,6 +714,10 @@ img {
   overflow-x: hidden;
   position: relative;
 }
+.main-container section {
+  z-index: 100000 !important;
+  position: relative !important;
+}
 .main-container .fix-content.fix-right {
   margin-bottom: 0;
 }
@@ -751,6 +756,10 @@ img {
   transform: translateX(-78%) translateY(-50%);
 }
 
+.other-content {
+  z-index: 100000;
+  position: relative;
+}
 .other-content .other-box {
   position: relative;
   border: 1px solid #d5d5d5;

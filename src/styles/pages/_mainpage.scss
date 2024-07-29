@@ -3,8 +3,12 @@
   overflow-x: hidden;
   position: relative;
 
+  section {
+    z-index: 100000 !important;
+    position: relative !important;
+  }
+
   .fix-content {
-    // z-index: 9999999 !important;
     &.fix-right {
       margin-bottom: 0;
     }
@@ -53,6 +57,9 @@
 }
 
 .other-content {
+  z-index: 100000;
+  position: relative;
+
   .other-box {
     position: relative;
     border: 1px solid #d5d5d5;
