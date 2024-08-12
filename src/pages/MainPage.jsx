@@ -20,14 +20,14 @@ import {
   jejubus,
   newsroom,
   nextjs,
+  bg1Img,
+  bg2Img,
 } from "../assets";
 import Nav from "../components/Nav";
 import SmallLogo from "../components/SmallLogo";
 
 function MainPage() {
-  const [currentImage, setCurrentImage] = useState(
-    "https://i.pinimg.com/originals/b5/9d/8f/b59d8f8cbb54368862109db8324dc6b8.jpg"
-  );
+  const [currentImage, setCurrentImage] = useState(bg1Img);
   const [isNavVisible, setIsNavVisible] = useState(true);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -35,9 +35,7 @@ function MainPage() {
     const scrollPosition = window.scrollY;
 
     if (window.innerWidth <= 768) {
-      setCurrentImage(
-        "https://i.pinimg.com/originals/b5/9d/8f/b59d8f8cbb54368862109db8324dc6b8.jpg"
-      );
+      setCurrentImage(bg1Img);
       setIsNavVisible(false);
       return;
     }
@@ -126,10 +124,7 @@ function MainPage() {
           <section className="content img-change">
             <div className="fix-img">
               <div className="img-box">
-                <img
-                  src="https://i.pinimg.com/originals/43/75/f3/4375f345717c2b75bc4bf6dd31782189.jpg"
-                  alt="img2"
-                />
+                <img src={bg1Img} alt="img2" />
               </div>
             </div>
             <div className="inner-content">
@@ -196,10 +191,7 @@ function MainPage() {
           <section className="content img-change">
             <div className="fix-img">
               <div className="img-box">
-                <img
-                  src="https://i.pinimg.com/originals/84/02/c2/8402c2436eed42595ce03ea36a9947d6.jpg"
-                  alt="img2"
-                />
+                <img src={bg2Img} alt="img2" />
               </div>
             </div>
             <div className="inner-content">
@@ -379,10 +371,7 @@ function MainPage() {
           <section className="content img-change">
             <div className="fix-img">
               <div className="img-box">
-                <img
-                  src="https://i.pinimg.com/originals/f2/b5/5e/f2b55eb862091d8c61a48da100811c98.jpg"
-                  alt="img2"
-                />
+                <img src={bg2Img} alt="img2" />
               </div>
             </div>
             <div className="inner-content">
@@ -444,10 +433,7 @@ function MainPage() {
         <section className="content img-change">
           <div className="fix-img">
             <div className="img-box">
-              <img
-                src="https://i.pinimg.com/originals/f2/b5/5e/f2b55eb862091d8c61a48da100811c98.jpg"
-                alt="img2"
-              />
+              <img src={bg2Img} alt="img2" />
             </div>
           </div>
           <div className="inner-content">

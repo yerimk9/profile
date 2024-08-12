@@ -210,8 +210,7 @@ img {
   position: relative;
 }
 .main-container .fix-content.fix-right .f-sec .img-box {
-  height: 100%;
-  width: 100%;
+  width: 60%;
   overflow: hidden;
 }
 .main-container .fix-content.fix-right .f-sec .img-box .img-box img {
@@ -292,8 +291,8 @@ img {
 .main-container .fix-img {
   position: fixed;
   width: 50%;
-  height: 60%;
-  top: 47%;
+  height: 70%;
+  top: 50%;
   left: 0;
   transform: translateY(-50%);
   opacity: 0;
@@ -462,6 +461,7 @@ img {
     width: 100%;
   }
   .main-container .fix-content .fix-img .img-box {
+    width: 80%;
     padding: 20px 0;
   }
   .main-container .inner-content .sub-heading {

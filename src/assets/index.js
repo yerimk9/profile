@@ -18,6 +18,9 @@ import mail from "../assets/svgs/mail.svg";
 import nextjs from "../assets/svgs/nextjs.svg";
 import phone from "../assets/svgs/phone.svg";
 
+import bg1Img from "../assets/pngs/bg1.jpg";
+import bg2Img from "../assets/pngs/bg2.jpg";
+
 export {
   css3,
   html5,
@@ -38,4 +41,6 @@ export {
   mail,
   nextjs,
   phone,
+  bg1Img,
+  bg2Img,
 };
