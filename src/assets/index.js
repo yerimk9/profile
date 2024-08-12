@@ -1,6 +1,7 @@
 import css3 from "../assets/pngs/css3.png";
 import html5 from "../assets/pngs/html5.png";
 import jejubus from "../assets/pngs/jejubus.png";
+import semi from "../assets/pngs/semi.png";
 import js from "../assets/pngs/js.png";
 import newsroom from "../assets/pngs/newsroom.png";
 import notion from "../assets/pngs/notion.png";
@@ -26,6 +27,7 @@ export {
   css3,
   html5,
   jejubus,
+  semi,
   js,
   blog,
   newsroom,

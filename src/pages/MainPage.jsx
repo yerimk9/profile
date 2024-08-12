@@ -23,6 +23,7 @@ import {
   nextjs,
   bg1Img,
   bg2Img,
+  semi,
 } from "../assets";
 import Nav from "../components/Nav";
 import SmallLogo from "../components/SmallLogo";
@@ -383,7 +384,7 @@ function MainPage() {
                 </p>
                 <p className="sec-heading margin-0">JEJU BUS</p>
                 <img src={jejubus} alt="jejuBus" />
-                <div className="sec-txt">
+                <div className="sec-txt mt-3">
                   <p className="text-sm">기간 : (2024.01.01 ~ 2024.01.25)</p>
                   <p className="project-content">
                     제주에 있는 버스 노선 및 정류소 정보, 실시간 도착 예정 정보,
@@ -445,7 +446,7 @@ function MainPage() {
               </p>
               <p className="sec-heading margin-0">NEWS ROOM</p>
               <img src={newsroom} alt="jejuBus" />
-              <div className="sec-txt">
+              <div className="sec-txt mt-3">
                 <p className="text-sm">기간 : (2024.07.19 ~ 2024.07.25)</p>
                 <p className="project-content">
                   뉴스 기사 제공 플랫폼은 공공 API를 통해 실시간으로 뉴스 기사를
@@ -468,6 +469,56 @@ function MainPage() {
                     <li className="project-link">
                       <a
                         href="https://github.com/yerimk9/news-room"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        GitHub
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="content img-change">
+          <div className="fix-img">
+            <div className="img-box">
+              <img src={bg2Img} alt="img2" />
+            </div>
+          </div>
+          <div className="inner-content">
+            <div className="txt-wrap">
+              <p className="sub-heading">
+                <span className="num">02</span>
+                프로젝트 - 3
+              </p>
+              <p className="sec-heading margin-0">새미네 부엌 클론코딩</p>
+              <img src={semi} alt="semi" />
+              <div className="sec-txt mt-3">
+                <p className="text-sm">기간 : (2024.08.01 ~ 2024.08.09)</p>
+                <p className="project-content">
+                  이 프로젝트는 유명한 "새미네 부엌" 웹사이트를 클론 코딩한
+                  프로젝트입니다. "새미네 부엌"은 다양한 요리 레시피와 콘텐츠를
+                  제공하는 플랫폼으로, 그 기능과 디자인을 최대한 유사하게
+                  재현하는 것을 목표로 했습니다. 본 프로젝트는 HTML, CSS,
+                  JavaScript를 기반으로 하며, 주요 라이브러리로 Swiper.js와
+                  GSAP를 활용하여 사용자 경험을 풍부하게 만들었습니다.
+                </p>
+                <div className="project-links-container">
+                  <ul>
+                    <li className="project-link">
+                      <a
+                        href="https://semie-clone2.vercel.app/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        사이트 바로가기
+                      </a>
+                    </li>
+                    <li className="project-link">
+                      <a
+                        href="https://github.com/yerimk9/semie_clone2"
                         target="_blank"
                         rel="noreferrer"
                       >
