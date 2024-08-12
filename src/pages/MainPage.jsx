@@ -24,6 +24,7 @@ import {
   bg1Img,
   bg2Img,
   semi,
+  recipenest,
 } from "../assets";
 import Nav from "../components/Nav";
 import SmallLogo from "../components/SmallLogo";
@@ -444,6 +445,55 @@ function MainPage() {
                 <span className="num">02</span>
                 프로젝트 - 2
               </p>
+              <p className="sec-heading margin-0">RECIPENEST</p>
+              <img src={recipenest} alt="recipenest" />
+              <div className="sec-txt mt-3">
+                <p className="text-sm">기간 : (2024.07.04 ~ 2024.07.18)</p>
+                <p className="project-content">
+                  RecipeNest는 레시피 정보 제공을 넘어서, 애니메이션과 디자인을
+                  통해 사용자의 시각적 즐거움을 극대화한 웹 프로젝트입니다.
+                  레시피를 단조롭게 나열하는 대신, 독창적이고 예술적인 접근으로
+                  사용자에게 색다른 경험을 제공하고자 했습니다.
+                </p>
+                <div className="project-links-container">
+                  <ul>
+                    <li className="project-link">
+                      <a
+                        href="https://recipenest-eosin.vercel.app/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        사이트 바로가기
+                      </a>
+                    </li>
+                    <li className="project-link">
+                      <a
+                        href="https://github.com/yerimk9/recipenest"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        GitHub
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="content img-change">
+          <div className="fix-img">
+            <div className="img-box">
+              <img src={bg2Img} alt="img2" />
+            </div>
+          </div>
+          <div className="inner-content">
+            <div className="txt-wrap">
+              <p className="sub-heading">
+                <span className="num">02</span>
+                프로젝트 - 3
+              </p>
               <p className="sec-heading margin-0">NEWS ROOM</p>
               <img src={newsroom} alt="jejuBus" />
               <div className="sec-txt mt-3">
@@ -481,6 +531,7 @@ function MainPage() {
             </div>
           </div>
         </section>
+
         <section className="content img-change">
           <div className="fix-img">
             <div className="img-box">
@@ -491,7 +542,7 @@ function MainPage() {
             <div className="txt-wrap">
               <p className="sub-heading">
                 <span className="num">02</span>
-                프로젝트 - 3
+                프로젝트 - 4
               </p>
               <p className="sec-heading margin-0">새미네 부엌 클론코딩</p>
               <img src={semi} alt="semi" />

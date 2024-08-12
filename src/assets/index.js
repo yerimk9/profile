@@ -14,6 +14,7 @@ import sass from "../assets/pngs/sass.png";
 import tailwind_css from "../assets/pngs/tailwind_css.png";
 import ts from "../assets/pngs/typescript.png";
 import blog from "../assets/pngs/blog.png";
+import recipenest from "../assets/pngs/recipenest.png";
 import visual_studio from "../assets/pngs/visual-studio.png";
 import github from "../assets/svgs/github.svg";
 import mail from "../assets/svgs/mail.svg";
@@ -47,4 +48,5 @@ export {
   phone,
   bg1Img,
   bg2Img,
+  recipenest,
 };
