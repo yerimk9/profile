@@ -15,6 +15,7 @@ import {
   mail,
   github,
   notion,
+  blog,
   visual_studio,
   npm,
   jejubus,
@@ -550,6 +551,24 @@ function MainPage() {
                           <p>
                             <span>NOTION</span>
                             http://ajar-dolphin-d6b.notion.site
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://rhrh0377.tistory.com/"
+                        className="flex-box"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <div className="icon">
+                          <img src={blog} alt="blog" />
+                        </div>
+                        <div className="txt-box">
+                          <p>
+                            <span>BLOG</span>
+                            https://rhrh0377.tistory.com/
                           </p>
                         </div>
                       </a>

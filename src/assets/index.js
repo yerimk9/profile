@@ -12,6 +12,7 @@ import redux_tookit from "../assets/pngs/redux_tookit.png";
 import sass from "../assets/pngs/sass.png";
 import tailwind_css from "../assets/pngs/tailwind_css.png";
 import ts from "../assets/pngs/typescript.png";
+import blog from "../assets/pngs/blog.png";
 import visual_studio from "../assets/pngs/visual-studio.png";
 import github from "../assets/svgs/github.svg";
 import mail from "../assets/svgs/mail.svg";
@@ -26,6 +27,7 @@ export {
   html5,
   jejubus,
   js,
+  blog,
   newsroom,
   notion,
   npm,
