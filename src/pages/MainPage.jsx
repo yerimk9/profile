@@ -141,17 +141,17 @@ function MainPage() {
                   <p className="introduce-heading">학력</p>
                   <ul>
                     <li>
+                      <p className="school-name">부경대학교 경영학부</p>
+                      <div className="edu-date">
+                        2022.03.02 ~ 2023.03.23 (중퇴)
+                      </div>
+                    </li>
+                    <li>
                       <p className="school-name">
                         경기대학교 AI 컴퓨터공학부 컴퓨터공학전공
                       </p>
                       <div className="edu-date">
                         2021.03.01 ~ 2022.01.10 (중퇴)
-                      </div>
-                    </li>
-                    <li>
-                      <p className="school-name">부경대학교 경영학부</p>
-                      <div className="edu-date">
-                        2022.03.02 ~ 2023.03.23 (중퇴)
                       </div>
                     </li>
                   </ul>
@@ -162,26 +162,45 @@ function MainPage() {
                   <ul>
                     <li>
                       <p className="edu-name">
-                        {" "}
-                        스마트 관광을 위한 AI 웹서비스 개발{" "}
+                        모던 웹 풀스택 개발자 실무과정 <br />
                       </p>
-                      <div className="edu-date">2023.06.05 ~ 2023.07.31</div>
+                      <div className="edu-date">
+                        2024.07.01 - 2024.08.16 (이젠 아카데미 강남)
+                      </div>
                       <ul>
-                        <li>- 웹서비스 및 개발 환경에 대한 이해</li>
-                        <li>- HTML5, CSS3 기본 지식 및 마크업 능력</li>
-                        <li>- JavaScript에 대한 이해</li>
+                        <li>- HTML5 + CSS3</li>
+                        <li>- JavaScript / TypeScript</li>
+                        <li>- React</li>
                       </ul>
                     </li>
+
                     <li className="mt-10">
                       <p className="edu-name">
                         제로베이스 프론트엔드 취업 스쿨 19기
                       </p>
-                      <div className="edu-date">2023.09.01 ~ 2024.04.02</div>
+                      <div className="edu-date">
+                        2023.09.01 ~ 2024.04.02 (제로베이스){" "}
+                      </div>
                       <ul>
                         <li>- HTML, CSS, SCSS를 이용한 클론코딩</li>
                         <li>- JavaScript 개념 정리 및 활용 프로젝트</li>
                         <li>- React 개념 정리 및 활용 프로젝트</li>
                         <li>- 컴퓨터공학 지식(CS) - 자료구조 / 알고리즘</li>
+                      </ul>
+                    </li>
+
+                    <li className="mt-10">
+                      <p className="edu-name">
+                        {" "}
+                        스마트 관광을 위한 AI 웹서비스 개발{" "}
+                      </p>
+                      <div className="edu-date">
+                        2023.06.05 ~ 2023.07.31 (제주산학융합원)
+                      </div>
+                      <ul>
+                        <li>- 웹서비스 및 개발 환경에 대한 이해</li>
+                        <li>- HTML5, CSS3 기본 지식 및 마크업 능력</li>
+                        <li>- JavaScript에 대한 이해</li>
                       </ul>
                     </li>
                   </ul>
