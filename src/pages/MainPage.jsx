@@ -104,7 +104,8 @@ function MainPage() {
           <div className="center-txt">
             <div className="page-heading">
               <span className="page-sub">profile·about me </span>
-              <p className="">김예림</p>
+              <p>김예림</p>
+              <p className="text-xs font-light">2002.09.24</p>
             </div>
           </div>
           <ScrollLink
