@@ -24,6 +24,8 @@ import phone from "../assets/svgs/phone.svg";
 import bg1Img from "../assets/pngs/bg1.jpg";
 import bg2Img from "../assets/pngs/bg2.jpg";
 
+import person from "../assets/pngs/person.png";
+
 export {
   css3,
   html5,
@@ -49,4 +51,5 @@ export {
   bg1Img,
   bg2Img,
   recipenest,
+  person,
 };

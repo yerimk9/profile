@@ -25,6 +25,7 @@ import {
   bg2Img,
   semi,
   recipenest,
+  person,
 } from "../assets";
 import Nav from "../components/Nav";
 import SmallLogo from "../components/SmallLogo";
@@ -690,6 +691,23 @@ function MainPage() {
                           <p>
                             <span>BLOG</span>
                             https://rhrh0377.tistory.com/
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://ajar-dolphin-d6b.notion.site/a19467308f864a69a364a4936f9c96ef"
+                        className="flex-box"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <div className="icon">
+                          <img src={person} alt="person" />
+                        </div>
+                        <div className="txt-box">
+                          <p>
+                            <span>이력서</span>잘 부탁드립니다.
                           </p>
                         </div>
                       </a>
