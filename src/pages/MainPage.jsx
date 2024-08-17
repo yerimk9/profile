@@ -105,7 +105,6 @@ function MainPage() {
             <div className="page-heading">
               <span className="page-sub">profile·about me </span>
               <p>김예림</p>
-              <p className="text-xs font-light">2002.09.24</p>
             </div>
           </div>
           <ScrollLink
@@ -708,7 +707,7 @@ function MainPage() {
                         </div>
                         <div className="txt-box">
                           <p>
-                            <span>이력서</span>잘 부탁드립니다.
+                            <span>이력서</span>잘 부탁드립니다!!!
                           </p>
                         </div>
                       </a>
